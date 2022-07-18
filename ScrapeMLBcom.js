@@ -1,5 +1,7 @@
 let GameDayLinks = [];
 
+GetGameDayLinks();
+
 async function GetGameDayLinks(){
 
     let currentDate = new Date;
