@@ -26,7 +26,7 @@ async function GetGameIDs(){
 
 //BaseLevel Functions
 
-function ParseGameFileForIDs(){
+function ParseGameFileForIDs(GamedayRequest){
     let GameIDs = [];
     index = 0;
     total = 
