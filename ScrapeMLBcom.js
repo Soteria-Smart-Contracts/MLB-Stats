@@ -6,7 +6,7 @@ async function GetGameDayLinks(){
     let formatteddate = `${currentDate.getFullYear()}-${currentDate.getMonth()}-22`;
     
     const parser = new DOMParser();
-    const parsed
+    const parsedSite
 
 
     return GameIDs; 
