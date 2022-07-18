@@ -25,7 +25,7 @@ async function GetGameIDs(){
 
 //BaseLevel Functions
 
-function ParseGameFile(){
+function ParseGameFileForIDs(){
 
 }
 
