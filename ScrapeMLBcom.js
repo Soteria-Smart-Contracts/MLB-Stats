@@ -26,7 +26,7 @@ async function GetGameDayLinks(){
 //LowLevel Functions
 
 
-function ParseBoxesForLinks(){
+function ParseBoxesForLinks(LinkBoxes){
     index = 0;
     total = LinkBoxes.length;
     let Links;
