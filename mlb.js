@@ -14,7 +14,8 @@ async function GetPlayerOBP(MLBID){
 async function GetGameIDs(){
     let currentDate = new Date;
     let formatteddate = `${currentDate.getFullYear()}-${ReturnMonthString(currentDate.getMonth() + 1)}-21`;
-    let GamedayRequest = await fetch('https://api.sportsdata.io/v3/mlb/scores/json/GamesByDate/' + formatteddate + A);
+    let GamedayRequest = await fetch('https://api.sportsdata.io/v3/mlb/scores/json/GamesByDate/' + formatteddate + APIkey);
+    
     return formatteddate;
 }
 
