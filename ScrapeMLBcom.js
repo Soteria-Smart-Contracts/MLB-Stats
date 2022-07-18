@@ -7,5 +7,5 @@ async function GetGameDayLinks(){
     GamedayRequest = await (await fetch('https://api.sportsdata.io/v3/mlb/scores/json/GamesByDate/' + formatteddate + APIkey)).json();
     let GameIDs = ParseGameFileForIDs(GamedayRequest);
 
-    return GameIDs;
+    return GameIDs; 
 }
