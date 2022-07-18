@@ -24,4 +24,6 @@ function ReturnMonthString(month){
         return "JAN";
     }
     if(month == 2){
+        return "FEB";
+    }
 }
