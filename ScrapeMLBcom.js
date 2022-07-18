@@ -8,6 +8,9 @@ async function GetGameDayLinks(){
     
     const parser = new DOMParser();
     const parsedSite = parser.parseFromString(await (await fetch('https://www.mlb.com/scores/' + formatteddate)).text(), "text/html");
+
+    
+
     console.log(parsedSite);
 
 }
