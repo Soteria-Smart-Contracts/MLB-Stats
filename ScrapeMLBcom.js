@@ -6,7 +6,7 @@ async function GetGameDayLinks(){
 
     let currentDate = new Date;
     let month = '0' + (currentDate.getMonth() + 1);
-    let formatteddate = `${currentDate.getFullYear()}-${month}-22`;
+    let formatteddate = `${currentDate.getFullYear()}-${month}-27`;
     
     const parser = new DOMParser();
     const parsedSite = parser.parseFromString(await (await fetch('https://www.mlb.com/scores/' + formatteddate)).text(), "text/html");
@@ -14,7 +14,7 @@ async function GetGameDayLinks(){
     LinkBoxes = parsedSite.getElementsByClassName('linkstyle__AnchorElement-sc-1rt6me7-0 lcFuuA getProductButtons__ButtonLink-sc-bgnczd-1 elIcfn trk-preview');
     GameDayLinks = await ParseBoxesForLinks(LinkBoxes);
 
-    co
+    console.log(GameDayLinks);
     return GameDayLinks;
 }
 
