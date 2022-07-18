@@ -1,5 +1,5 @@
 const APIprefix = 'http://lookup-service-prod.mlb.com';
-const APIkey
+const APIkey = '36e1a1ee5dcd46d994b4dd2bd86080a1';
 let PlayerHittingStats;
 
 
