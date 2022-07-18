@@ -11,7 +11,6 @@ async function GetGameDayLinks(){
 
     LinkBoxes = parsedSite.getElementsByClassName('linkstyle__AnchorElement-sc-1rt6me7-0 lcFuuA getProductButtons__ButtonLink-sc-bgnczd-1 elIcfn trk-preview');
 
-    
 
     GameDayLinks = ;
 
@@ -28,4 +27,4 @@ async function GetGameDayLinks(){
 //LowLevel Functions
 
 
-async function 
+async function ParseB
