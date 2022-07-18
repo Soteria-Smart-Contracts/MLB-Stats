@@ -29,8 +29,9 @@ async function GetGameDayLinks(){
 async function ParseBoxesForLinks{
     index = 0;
     total = LinkBoxes.length;
+    let Links;
     while(index < total){
-        GameDayLinks.push(LinkBoxes[index].href);
+        Links.push(LinkBoxes[index].href);
         index++;
     }
     return GameDayLinks;
