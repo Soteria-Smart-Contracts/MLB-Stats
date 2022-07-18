@@ -1,5 +1,5 @@
 const APIprefix = 'http://lookup-service-prod.mlb.com';
 
-function GetPlayerOBP(MLBID){
-    PlayerHittingStats = await
+async function GetPlayerOBP(MLBID){
+    PlayerHittingStats = await fetch()
 }
