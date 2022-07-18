@@ -16,3 +16,16 @@ async function GetGameDayLinks(){
     console.log(parsedSite);
 
 }
+
+
+
+
+
+
+
+
+
+//LowLevel Functions
+
+
+function
