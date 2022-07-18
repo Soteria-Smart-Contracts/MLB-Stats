@@ -30,7 +30,8 @@ function ParseGameFileForIDs(GamedayRequest){
     let GameIDs = [];
     index = 0;
     total = GamedayRequest.length;
-    
+    while(index < total){`
+    `
     return GameIDs;
 
 }
