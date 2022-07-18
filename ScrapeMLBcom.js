@@ -8,5 +8,6 @@ async function GetGameDayLinks(){
     const parser = new DOMParser();
     
 
+
     return GameIDs; 
 }
