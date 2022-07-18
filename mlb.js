@@ -11,7 +11,8 @@ async function GetPlayerOBP(MLBID){
 }
 
 async function GetGameIDs(date){
-    let date = 
+    let currentDate = new Date;
+    
 }
 
 
