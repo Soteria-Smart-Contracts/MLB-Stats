@@ -8,4 +8,4 @@ async function GetPlayerOBP(MLBID){
     console.log(PlayerOBP);
 }
 
-async function GetGameIDs
+async function GetGameIDs(date)
