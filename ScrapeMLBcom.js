@@ -28,4 +28,4 @@ async function GetGameDayLinks(){
 //LowLevel Functions
 
 
-function
+async function 
