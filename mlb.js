@@ -13,7 +13,7 @@ async function GetPlayerOBP(MLBID){
 async function GetGameIDs(){
     let currentDate = new Date;
     let formatteddate = `${currentDate.getFullYear()}-${ReturnMonthString(currentDate.getMonth() + 1)}-${currentDate.getDate()}`;
-    
+
     return formatteddate;
 }
 
@@ -21,6 +21,8 @@ async function GetGameIDs(){
 
 
 //BaseLevel Functions
+
+function ParseGameFile
 
 function ReturnMonthString(month){
     if(month == 1){
