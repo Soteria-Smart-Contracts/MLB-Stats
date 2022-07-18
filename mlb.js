@@ -2,7 +2,8 @@ const APIprefix = 'http://lookup-service-prod.mlb.com';
 let PlayerHittingStats;
 
 async function GetPlayerOBP(MLBID){
-    PlayerHittingStats = await fetch(`${APIprefix}/json/named.sport_hitting_tm.bam?league_list_id='mlb'&game_type='R'&season='2022'&player_id=${MLBID}`)
+    StatRequest = await fetch(`${APIprefix}/json/named.sport_hitting_tm.bam?league_list_id='mlb'&game_type='R'&season='2022'&player_id=${MLBID}`)
+    let 
     let PlayerOBP = PlayerHittingStats.json();
     console.log(PlayerOBP);
 }
