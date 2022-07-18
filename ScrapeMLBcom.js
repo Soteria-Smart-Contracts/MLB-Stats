@@ -1,4 +1,4 @@
-let GameDayLinks
+let GameDayLinks = [];
 
 async function GetGameDayLinks(){
 
@@ -11,9 +11,7 @@ async function GetGameDayLinks(){
 
     LinkBoxes = parsedSite.getElementsByClassName('linkstyle__AnchorElement-sc-1rt6me7-0 lcFuuA getProductButtons__ButtonLink-sc-bgnczd-1 elIcfn trk-preview');
 
-    
-
-    console.log(parsedSite);
+    GameDayLinks = [];
 
 }
 
