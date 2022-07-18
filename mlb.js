@@ -5,5 +5,5 @@ async function GetPlayerOBP(MLBID){
     StatRequest = await fetch(`${APIprefix}/json/named.sport_hitting_tm.bam?league_list_id='mlb'&game_type='R'&season='2022'&player_id=${MLBID}`)
     let PlayerHittingStats = await StatRequest.json();
     let PlayerOBP = PlayerHittingStats.obp;
-    console.log(PlayerOBP);
+    console.log(PlayerHittingStats);
 }
