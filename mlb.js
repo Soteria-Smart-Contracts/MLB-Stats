@@ -1,4 +1,1 @@
-const MLBStatsAPI = require('mlb-stats-api');
-const mlbStats = new MLBStatsAPI();
-
-console.log(mlbStats.getGame());
+const APIprefix = 'https://api.mlb.com/v1/';
