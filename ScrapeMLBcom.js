@@ -1,4 +1,4 @@
-
+let GameDayLinks
 
 async function GetGameDayLinks(){
 
