@@ -1,3 +1,3 @@
 
 
-async function Scrape
+async function GetGameDayLinks
