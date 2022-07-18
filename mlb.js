@@ -5,7 +5,7 @@ let PlayerHittingStats;
 
 
 async function GetPlayerOBP(MLBID){
-    StatRequest = await fetch(`${APIprefix}/json/named.sport_hitting_tm.bam?league_list_id='mlb'&game_type='R'&season='2022'&player_id=${MLBID}`)
+    let StatRequest = await fetch(`${APIprefix}/json/named.sport_hitting_tm.bam?league_list_id='mlb'&game_type='R'&season='2022'&player_id=${MLBID}`)
     let PlayerHittingStats = await StatRequest.json();
     let PlayerOBP = PlayerHittingStats.sport_hitting_tm.queryResults.row.obp;
     console.log(PlayerOBP);
@@ -15,7 +15,7 @@ async function GetGameIDs(){
     let currentDate = new Date;
     let formatteddate = `${currentDate.getFullYear()}-${ReturnMonthString(currentDate.getMonth() + 1)}-21`;
     let GamedayRequest = await fetch('https://api.sportsdata.io/v3/mlb/scores/json/GamesByDate/' + formatteddate + APIkey);
-    
+
     return formatteddate;
 }
 
