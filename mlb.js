@@ -29,7 +29,8 @@ async function GetGameIDs(){
 function ParseGameFileForIDs(GamedayRequest){
     let GameIDs = [];
     index = 0;
-    total = 
+    total = GamedayRequest.length;
+    
     return GameIDs;
 
 }
