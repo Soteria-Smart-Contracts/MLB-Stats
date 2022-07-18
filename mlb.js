@@ -28,7 +28,8 @@ async function GetGameIDs(){
 
 function ParseGameFileForIDs(){
     let GameIDs = [];
-    inde
+    index = 0;
+    total = 
     return GameIDs;
 
 }
