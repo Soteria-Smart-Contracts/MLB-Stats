@@ -13,7 +13,6 @@ async function GetGameDayLinks(){
     GameDayLinks = ParseBoxesForLinks(LinkBoxes);
 
     return GameDayLinks;
-
 }
 
 
@@ -34,5 +33,5 @@ async function ParseBoxesForLinks{
         GameDayLinks.push(LinkBoxes[index].href);
         index++;
     }
-
+    return GameDayLinks;
 }
