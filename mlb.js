@@ -1,4 +1,4 @@
-const MLBStatsAPI = 'mlb-stats-api';
+const MLBStatsAPI = require('mlb-stats-api');
 const mlbStats = new MLBStatsAPI();
 
 console.log(mlbStats.getGame());
