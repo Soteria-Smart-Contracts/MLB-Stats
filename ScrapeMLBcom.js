@@ -1,6 +1,7 @@
 let GameDayLinks = [];
 
 GetGameDayLinks();
+console.log(GameDayLinks);
 
 async function GetGameDayLinks(){
 
