@@ -27,7 +27,9 @@ async function GetGameIDs(){
 //BaseLevel Functions
 
 function ParseGameFileForIDs(){
-    
+    let GameIDs = [];
+    inde
+    return GameIDs;
 
 }
 
