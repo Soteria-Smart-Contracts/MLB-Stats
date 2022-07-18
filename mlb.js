@@ -19,7 +19,9 @@ async function GetGameIDs(date){
 
 //BaseLevel Functions
 
-fucntion ReturnMonthString(month){
+function ReturnMonthString(month){
     if(month == 1){
         return "JAN";
-    
+    }
+    if(month == 2){
+}
