@@ -27,4 +27,4 @@ async function GetGameDayLinks(){
 //LowLevel Functions
 
 
-async function ParseB
+async function ParseBoxesForLinks
