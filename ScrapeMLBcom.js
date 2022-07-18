@@ -6,7 +6,7 @@ async function GetGameDayLinks(){
     let formatteddate = `${currentDate.getFullYear()}-${currentDate.getMonth()}-22`;
     
     const parser = new DOMParser();
-    const parsedSite = parser.parseFromString(await (await fetch('https://www.mlb.com/schedule/')).document(), text);
+    const parsedSite = parser.parseFromString(await (await fetch('https://www.mlb.com/schedule/')).document(), "text/html");
 
 
     return GameIDs; 
