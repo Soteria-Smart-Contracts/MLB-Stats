@@ -1,5 +1,5 @@
 const APIprefix = 'http://lookup-service-prod.mlb.com';
-const APIkey = '36e1a1ee5dcd46d994b4dd2bd86080a1';
+const APIkey = '?key=36e1a1ee5dcd46d994b4dd2bd86080a1';
 let PlayerHittingStats;
 
 
@@ -14,7 +14,7 @@ async function GetPlayerOBP(MLBID){
 async function GetGameIDs(){
     let currentDate = new Date;
     let formatteddate = `${currentDate.getFullYear()}-${ReturnMonthString(currentDate.getMonth() + 1)}-21`;
-    let GamedayRequest = await fetch('https://api.sportsdata.io/v3/mlb/scores/json/GamesByDate/' + formatteddate);
+    let GamedayRequest = await fetch('https://api.sportsdata.io/v3/mlb/scores/json/GamesByDate/' + formatteddate + A);
     return formatteddate;
 }
 
