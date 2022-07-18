@@ -34,5 +34,5 @@ async function ParseBoxesForLinks{
         Links.push(LinkBoxes[index].href);
         index++;
     }
-    return GameDayLinks;
+    return Links;
 }
