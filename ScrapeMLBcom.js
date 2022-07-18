@@ -12,7 +12,7 @@ async function GetGameDayLinks(){
     LinkBoxes = parsedSite.getElementsByClassName('linkstyle__AnchorElement-sc-1rt6me7-0 lcFuuA getProductButtons__ButtonLink-sc-bgnczd-1 elIcfn trk-preview');
     ParseBoxesForLinks(LinkBoxes);
 
-    GameDayLinks = ;
+    
 
 }
 
@@ -34,4 +34,5 @@ async function ParseBoxesForLinks{
         GameDayLinks.push(LinkBoxes[index].href);
         index++;
     }
+    
 }
