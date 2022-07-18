@@ -32,6 +32,7 @@ function ParseGameFileForIDs(GamedayRequest){
     total = GamedayRequest.length;
     while(index < total){
         
+    }
     return GameIDs;
 
 }
