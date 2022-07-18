@@ -1,7 +1,6 @@
 let GameDayLinks = [];
 
 GetGameDayLinks();
-console.log(GameDayLinks);
 
 async function GetGameDayLinks(){
 
@@ -15,6 +14,7 @@ async function GetGameDayLinks(){
     LinkBoxes = parsedSite.getElementsByClassName('linkstyle__AnchorElement-sc-1rt6me7-0 lcFuuA getProductButtons__ButtonLink-sc-bgnczd-1 elIcfn trk-preview');
     GameDayLinks = await ParseBoxesForLinks(LinkBoxes);
 
+    co
     return GameDayLinks;
 }
 
