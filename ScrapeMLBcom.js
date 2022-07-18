@@ -10,9 +10,9 @@ async function GetGameDayLinks(){
     const parsedSite = parser.parseFromString(await (await fetch('https://www.mlb.com/scores/' + formatteddate)).text(), "text/html");
 
     LinkBoxes = parsedSite.getElementsByClassName('linkstyle__AnchorElement-sc-1rt6me7-0 lcFuuA getProductButtons__ButtonLink-sc-bgnczd-1 elIcfn trk-preview');
- //   GameDayLinks = await ParseBoxesForLinks(LinkBoxes);
+    GameDayLinks = await ParseBoxesForLinks(LinkBoxes);
 
-    return LinkBoxes[1].href;
+    return GameDayLinks;
 }
 
 
