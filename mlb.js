@@ -7,3 +7,5 @@ async function GetPlayerOBP(MLBID){
     let PlayerOBP = PlayerHittingStats.sport_hitting_tm.queryResults.row.obp;
     console.log(PlayerOBP);
 }
+
+async function GetGameIDs
