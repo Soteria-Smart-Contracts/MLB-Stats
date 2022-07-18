@@ -3,7 +3,7 @@
 async function GetGameDayLinks(){
 
     let currentDate = new Date;
-    let month = (currentDate.getMonth() + 1);
+    let month = '0' + (currentDate.getMonth() + 1);
     let formatteddate = `${currentDate.getFullYear()}-${currentDate.getMonth() + 1}-22`;
     
     const parser = new DOMParser();
