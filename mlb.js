@@ -1,1 +1,3 @@
-const APIprefix = 'http://lookup-service-prod.mlb.com/';
+const APIprefix = 'http://lookup-service-prod.mlb.com';
+
+function 
