@@ -22,7 +22,9 @@ async function GetGameIDs(){
 
 //BaseLevel Functions
 
-function ParseGameFile
+function ParseGameFile(){
+    
+}
 
 function ReturnMonthString(month){
     if(month == 1){
