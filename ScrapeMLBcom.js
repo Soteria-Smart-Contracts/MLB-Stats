@@ -31,7 +31,7 @@ function ParseBoxesForLinks(LinkBoxes){
     total = LinkBoxes.length;
     let Links;
     while(index < total){
-        Links.push(LinkBoxes[index].href);
+        Links[index] = (LinkBoxes[index].href);
         index++;
     }
     return Links;
