@@ -23,9 +23,9 @@ async function GetPitcherFIP(MLBID){
     
     HR = parseFloat(PlayerPitchingStats.sport_pitching_tm.queryResults.row.hr);
     BB = parseFloat(PlayerPitchingStats.sport_pitching_tm.queryResults.row.bb;
-    HBP = PlayerPitchingStats.sport_pitching_tm.queryResults.row.hb;
-    SO = PlayerPitchingStats.sport_pitching_tm.queryResults.row.so;
-    IP = PlayerPitchingStats.sport_pitching_tm.queryResults.row.ip;
+    HBP = parseFloat(PlayerPitchingStats.sport_pitching_tm.queryResults.row.hb;
+    SO = parseFloat(PlayerPitchingStats.sport_pitching_tm.queryResults.row.so);
+    IP = parseFloat(PlayerPitchingStats.sport_pitching_tm.queryResults.row.ip);
     console.log(HR,BB,HBP,SO,IP);
 
     let FIP = await (((13 * HR) + (3 * (BB + HBP)) - (2 * SO)) / IP + 3.214).toFixed(3);
