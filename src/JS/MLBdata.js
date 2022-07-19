@@ -22,8 +22,8 @@ async function GetPitcherFIP(MLBID){
     let PlayerPitchingStats = await StatRequest.json();
     
     HR = parseFloat(PlayerPitchingStats.sport_pitching_tm.queryResults.row.hr);
-    BB = parseFloat(PlayerPitchingStats.sport_pitching_tm.queryResults.row.bb;
-    HBP = parseFloat(PlayerPitchingStats.sport_pitching_tm.queryResults.row.hb;
+    BB = parseFloat(PlayerPitchingStats.sport_pitching_tm.queryResults.row.bb);
+    HBP = parseFloat(PlayerPitchingStats.sport_pitching_tm.queryResults.row.hb);
     SO = parseFloat(PlayerPitchingStats.sport_pitching_tm.queryResults.row.so);
     IP = parseFloat(PlayerPitchingStats.sport_pitching_tm.queryResults.row.ip);
     console.log(HR,BB,HBP,SO,IP);
