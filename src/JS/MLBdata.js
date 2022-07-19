@@ -33,6 +33,8 @@ async function GetPitcherFIP(MLBID){
     let s2 = (3 *(BB + HBP))
     console.log(s2);
     let s3 = (2 * SO)
+    console.log(s3);
+    
 
     let FIP = await (((13 * HR) + (3 * (BB + HBP)) - (2 * SO)) / IP + 3.214).toFixed(3);
 
