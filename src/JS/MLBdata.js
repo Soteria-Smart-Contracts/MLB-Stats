@@ -17,7 +17,8 @@ async function GetPitcherFIP(MLBID){
     let PlayerPitchingStats = await StatRequest.json();
     
     let HR = PlayerPitchingStats.sport_pitching_tm.queryResults.row.hr;
-    let 
+    let BB = PlayerPitchingStats.sport_pitching_tm.queryResults.row.bb;
+    let SO = PlayerPitchingStats.sport_pitching_tm.queryResults.row.so;
 
 
     console.log(PlayerFIP);
