@@ -3,6 +3,8 @@ const APIkey = '?key=36e1a1ee5dcd46d994b4dd2bd86080a1';
 let PlayerHittingStats;
 let GamedayRequest;
 
+let HR;
+Let
 
 
 async function GetBatterOBP(MLBID){
