@@ -12,32 +12,11 @@ async function GetPlayerOBP(MLBID){
     console.log(PlayerOBP);
 }
 
-async function GetGameIDs(){
-    let currentDate = new Date;
-    let formatteddate = `${currentDate.getFullYear()}-${ReturnMonthString(currentDate.getMonth() + 1)}-22`;
-    console.log(formatteddate);
-    GamedayRequest = await (await fetch('https://api.sportsdata.io/v3/mlb/scores/json/GamesByDate/' + formatteddate + APIkey)).json();
-    let GameIDs = ParseGameFileForIDs(GamedayRequest);
-
-    return GameIDs;
-}
-
 
 
 
 //BaseLevel Functions
 
-function ParseGameFileForIDs(GamedayRequest){
-    let GameIDs = [];
-    index = 0;
-    total = GamedayRequest.length;
-    while(index < total){
-        GameIDs.push(GamedayRequest[index].GameID);
-        index++;
-    }
-    return GameIDs;
-
-}
 
 function ReturnMonthString(month){
     if(month == 1){
