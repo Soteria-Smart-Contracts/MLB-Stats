@@ -4,7 +4,9 @@ let PlayerHittingStats;
 let GamedayRequest;
 
 let HR;
-Let
+let BB;
+let HBP;
+
 
 
 async function GetBatterOBP(MLBID){
