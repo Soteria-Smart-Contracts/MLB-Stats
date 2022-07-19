@@ -28,14 +28,6 @@ async function GetPitcherFIP(MLBID){
     IP = PlayerPitchingStats.sport_pitching_tm.queryResults.row.ip;
     console.log(HR,BB,HBP,SO,IP);
 
-    let s1 = (13 * HR)
-    console.log(s1);
-    let s2 = (3 * (BB + HBP))
-    console.log(s2);
-    let s3 = (2 * SO)
-    console.log(s3);
-    console.log(s1 + s2 + s3);
-
     let FIP = await (((13 * HR) + (3 * (BB + HBP)) - (2 * SO)) / IP + 3.214).toFixed(3);
 
     return(FIP);
