@@ -6,7 +6,8 @@ let GamedayRequest;
 let HR;
 let BB;
 let HBP;
-
+let SO;
+let IP;
 
 
 async function GetBatterOBP(MLBID){
@@ -20,11 +21,11 @@ async function GetPitcherFIP(MLBID){
     let StatRequest = await fetch(`${APIprefix}/json/named.sport_pitching_tm.bam?league_list_id='mlb'&game_type='R'&season='2022'&player_id=${MLBID}`)
     let PlayerPitchingStats = await StatRequest.json();
     
-    let HR = PlayerPitchingStats.sport_pitching_tm.queryResults.row.hr;
-    let BB = PlayerPitchingStats.sport_pitching_tm.queryResults.row.bb;
-    let HBP = PlayerPitchingStats.sport_pitching_tm.queryResults.row.hb;
-    let SO = PlayerPitchingStats.sport_pitching_tm.queryResults.row.so;
-    let IP = PlayerPitchingStats.sport_pitching_tm.queryResults.row.ip;
+    HR = PlayerPitchingStats.sport_pitching_tm.queryResults.row.hr;
+    BB = PlayerPitchingStats.sport_pitching_tm.queryResults.row.bb;
+    HBP = PlayerPitchingStats.sport_pitching_tm.queryResults.row.hb;
+    SO = PlayerPitchingStats.sport_pitching_tm.queryResults.row.so;
+    IP = PlayerPitchingStats.sport_pitching_tm.queryResults.row.ip;
     console.log(HR,BB,HBP,SO,IP);
 
     let FIP = await (((13 * HR) + (3 * (BB + HBP)) - (2 * SO)) / IP + 3.214).toFixed(3);
