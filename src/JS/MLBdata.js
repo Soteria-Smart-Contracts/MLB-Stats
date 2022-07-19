@@ -27,5 +27,5 @@ async function GetPitcherFIP(MLBID){
 //BaseLevel Functions
 
 
-async function GetGameDayLinks(){
+async function CalculateFIP
 
