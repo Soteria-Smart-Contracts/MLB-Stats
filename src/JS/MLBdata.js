@@ -21,8 +21,8 @@ async function GetPitcherFIP(MLBID){
     let StatRequest = await fetch(`${APIprefix}/json/named.sport_pitching_tm.bam?league_list_id='mlb'&game_type='R'&season='2022'&player_id=${MLBID}`)
     let PlayerPitchingStats = await StatRequest.json();
     
-    HR = parse(PlayerPitchingStats.sport_pitching_tm.queryResults.row.hr);
-    BB = PlayerPitchingStats.sport_pitching_tm.queryResults.row.bb;
+    HR = parseFloat(PlayerPitchingStats.sport_pitching_tm.queryResults.row.hr);
+    BB = parseFloat(PlayerPitchingStats.sport_pitching_tm.queryResults.row.bb;
     HBP = PlayerPitchingStats.sport_pitching_tm.queryResults.row.hb;
     SO = PlayerPitchingStats.sport_pitching_tm.queryResults.row.so;
     IP = PlayerPitchingStats.sport_pitching_tm.queryResults.row.ip;
