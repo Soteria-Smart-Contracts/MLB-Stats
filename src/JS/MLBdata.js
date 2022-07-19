@@ -12,7 +12,7 @@ async function GetBatterOBP(MLBID){
     console.log(PlayerOBP);
 }
 
-async
+async function Get
 
 
 
