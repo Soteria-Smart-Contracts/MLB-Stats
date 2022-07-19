@@ -36,7 +36,7 @@ async function GetPitcherFIP(MLBID){
 
 
 async function CalculateFIP(HR,BB,HBP,SO,IP){
-    let FIP = (HBP + BB) / (IP * 3) + (HR * 2) + (SO * -1);
+    let FIP = ((13 ));
     return FIP;
 }
 
