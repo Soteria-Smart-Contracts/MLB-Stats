@@ -16,7 +16,7 @@ async function GetPitcherFIP(MLBID){
     let StatRequest = await fetch(`${APIprefix}/json/named.sport_pitching_tm.bam?league_list_id='mlb'&game_type='R'&season='2022'&player_id=${MLBID}`)
     let PlayerPitchingStats = await StatRequest.json();
     
-    let H
+    let HR
 
 
     console.log(PlayerFIP);
