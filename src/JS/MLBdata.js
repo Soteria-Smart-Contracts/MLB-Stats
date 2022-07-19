@@ -24,7 +24,7 @@ async function GetPitcherFIP(MLBID){
 
     let FIP = (HBP + BB) / (IP * 3) + (HR * 2) + (SO * -1);
 
-    console.log(PlayerFIP);
+    console.log(FIP);
 }
 
 
