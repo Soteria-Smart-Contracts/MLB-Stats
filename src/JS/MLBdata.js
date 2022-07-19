@@ -27,5 +27,5 @@ async function GetPitcherFIP(MLBID){
 //BaseLevel Functions
 
 
-async function CalculateFIP
+async function CalculateFIP()
 
