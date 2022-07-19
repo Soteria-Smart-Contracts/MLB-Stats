@@ -12,7 +12,7 @@ async function GetBatterOBP(MLBID){
     console.log(PlayerOBP);
 }
 
-async function Get
+async function GetPitcherFIP
 
 
 
