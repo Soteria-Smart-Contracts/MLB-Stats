@@ -1,5 +1,5 @@
 let GameDayLinks = [];
-let M
+let Matchups = [];
 
 GetGameDayLinks();
 
@@ -16,6 +16,7 @@ async function GetLineups(){
     let total = Boxes.length;
 
     while(index > total){
+        
         
     }
 }
