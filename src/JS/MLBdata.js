@@ -42,7 +42,7 @@ async function GetPitcherFIP(MLBID){
 
 GetPlayerID(FullName){
     
-    let StatRequest = await fetch(`${APIprefix}/json/named.search_player_all.bam?sport_code='mlb'&active_sw='Y'&name_part={name_part}`)
+    let StatRequest = await fetch(`${APIprefix}/json/named.search_player_all.bam?sport_code='mlb'&active_sw='Y'&name_part='${FullName}'`)
 }
 
 
