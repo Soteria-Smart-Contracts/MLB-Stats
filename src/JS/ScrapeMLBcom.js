@@ -14,9 +14,9 @@ async function GetLineups(){
     let total = Boxes.length;
 
     while(index < total){
-        
+        console.log(Boxes[index].innerHTML);
         Matchups[index] = {
-            HomeTeam: Boxes[index].getElementsByClassName('lineup__mteam is-visit')[index].innerText,
+            HomeTeam: Boxes[index].getElementsByClassName('lineup__mteam is-visit')[index].innerHTML,
             AwayTeam: Boxes[index].getElementsByClassName('lineup__mteam is-home')[index].innerText,
 
 
