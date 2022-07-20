@@ -5,10 +5,10 @@ let Matchups = [];
 async function GetLineups(){
     let Boxes = [];
 
-    const parser = new DOMParser();
-    const parsedSite = parser.parseFromString(await (await fetch('https://www.rotowire.com/baseball/daily-lineups.php?date=tomorrow')).text(), "text/html");
+    const parser1 = new DOMParser();
+    const parsedRW = parser.parseFromString(await (await fetch('https://www.rotowire.com/baseball/daily-lineups.php?date=tomorrow')).text(), "text/html");
     //https://cors-anywhere.herokuapp.com/
-    Boxes = parsedSite.getElementsByClassName('lineup__box');
+    Boxes = parsedRW.getElementsByClassName('lineup__box');
 
     let index = 0;
     let total = Boxes.length;
