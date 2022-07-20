@@ -20,8 +20,7 @@ async function GetGameDayLinks(){
 }
 
 async function GetLineups(){
-    let TeamAbbr= [];
-    let Lineups = [];
+    
      Boxes = [];
 
     const parser = new DOMParser();
@@ -33,9 +32,7 @@ async function GetLineups(){
     let total = Boxes.length;
 
     while(index > total){
-        TeamAbbr[index] = (Boxes[index].getElementsByClassName('lineup__team-name')[0].innerText);
-        Lineups[index] = (Boxes[index].getElementsByClassName('lineup__player-name')[0].innerText);
-        index++;
+        
     }
 }
 
