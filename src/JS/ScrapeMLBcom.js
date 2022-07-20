@@ -1,4 +1,5 @@
 let GameDayLinks = [];
+let M
 
 GetGameDayLinks();
 
