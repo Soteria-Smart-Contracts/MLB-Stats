@@ -32,7 +32,11 @@ async function GetLineups(){
     let index = 0;
     let total = Boxes.length;
 
-    while(index >)
+    while(index > total){
+        TeamAbbr[index] = (Boxes[index].getElementsByClassName('lineup__team-name')[0].innerText);
+        Lineups[index] = (Boxes[index].getElementsByClassName('lineup__player-name')[0].innerText);
+        index++;
+    }
 }
 
 
