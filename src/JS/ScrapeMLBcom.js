@@ -18,7 +18,7 @@ async function GetGameDayLinks(){
     return GameDayLinks;
 }
 
-async function Get
+async function GetLineups()
 
 
 
