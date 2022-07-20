@@ -19,7 +19,7 @@ async function GetGameDayLinks(){
 }
 
 async function GetLineups(){
-    let Team A
+    let TeamAbbr= [];
     let Lineups = [];
 
     const parser = new DOMParser();
