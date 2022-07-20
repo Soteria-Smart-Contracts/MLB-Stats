@@ -1,6 +1,6 @@
 let Dropdown1 = false;
 
-function OpenDropDown(id) {
+function DropDown(id) {
     document.getElementById(id).style.display = "block";
     Dropdown1 = true;
 }
