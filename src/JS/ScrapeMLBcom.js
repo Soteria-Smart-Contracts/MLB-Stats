@@ -20,6 +20,9 @@ async function GetGameDayLinks(){
 
 async function GetLineups(){
     let Lineups = [];
+
+    const parser = new DOMParser();
+    const parsedSite = parser.parseFromString(await (await fetch('https://cors-anywhere.herokuapp.com/https://www.mlb.com/scores/' + formatteddate)).text(), "text/html");
     
 
     return Lineups;
