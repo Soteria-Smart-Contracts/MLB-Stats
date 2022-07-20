@@ -29,7 +29,7 @@ async function GetLineups(){
     
     Boxes = parsedSite.getElementsByClassName('lineup__box');
 
-    ;
+    
 }
 
 
