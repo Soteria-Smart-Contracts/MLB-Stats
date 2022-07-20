@@ -21,12 +21,12 @@ async function GetGameDayLinks(){
 async function GetLineups(){
     let TeamAbbr= [];
     let Lineups = [];
-    let Bo
+    let Boxes = 
 
     const parser = new DOMParser();
     const parsedSite = parser.parseFromString(await (await fetch('https://cors-anywhere.herokuapp.com/https://www.rotowire.com/baseball/daily-lineups.php?date=tomorrow')).text(), "text/html");
     
-    let LineupBoxes = parsedSite.getElementsByClassName('lineup__box');
+    Boxeks = parsedSite.getElementsByClassName('lineup__box');
 
     
 
