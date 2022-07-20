@@ -30,7 +30,8 @@ async function GetLineups(){
     Boxes = parsedSite.getElementsByClassName('lineup__box');
 
     let abbrdivs = Boxes[0].getElementsByClassName('lineup__abbr');
-    let abbrs = abbrdivs[0].getElementsByTagName('a');
+    
+    console.log(abbrdivs);
 }
 
 
