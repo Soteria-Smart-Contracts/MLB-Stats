@@ -20,7 +20,7 @@ async function GetLineups(){
         console.log(BoxesRW[index].getElementsByClassName('lineup__mteam is-visit')[index].innerText);
         Matchups[index] = {
             HomeTeam: parsedmlb.getElementsByClassName('TeamWrappersstyle__DesktopTeamWrapper-sc-uqs6qh-0 fdaoCu')[0].innerText,
-            AwayTeam: BoxesRW[index].getElementsByClassName('lineup__mteam is-visit')[index].innerText,
+            AwayTeam: parsedmlb.getElementsByClassName('TeamWrappersstyle__DesktopTeamWrapper-sc-uqs6qh-0 fdaoCu')[1].innerText,
 
 
 
