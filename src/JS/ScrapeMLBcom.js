@@ -30,7 +30,7 @@ async function GetLineups(){
 
     
 
-    return Boxes.getElementsByClassName;
+    return Boxes[0].getElementsByClassName;
 }
 
 
