@@ -17,10 +17,10 @@ async function GetLineups(){
 
     while(index > total){
         Matchups[index] = {
+            HomeTeam: Boxes[index].getElementsByClassName('lineup__team')[0].innerText,
 
 
 
-            
 
         }
         index++;
