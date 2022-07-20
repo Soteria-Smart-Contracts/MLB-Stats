@@ -10,5 +10,4 @@ function DropDown(id) {
         document.getElementById(id + 'Icon').innerHTML = "▼";
         Dropdown1 = false;
     }
-    console.log(Dropdown1);
 }
