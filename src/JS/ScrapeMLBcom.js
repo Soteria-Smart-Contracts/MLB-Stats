@@ -11,7 +11,7 @@ async function GetLineups(){
     const parsedmlb = parser2.parseFromString(await (await fetch('https://www.mlb.com/scores/')).text(), "text/html");
     //https://cors-anywhere.herokuapp.com/
     BoxesRW = parsedRW.getElementsByClassName('lineup__box');
-    Boxes
+    BoxesMLB = parsedmlb.getElementsByClassName('linkstyle__AnchorElement-sc-1rt6me7-0 lcFuuA getProductButtons__ButtonLink-sc-bgnczd-1 elIcfn trk-preview');
 
     let index = 0;
     let total = Boxes.length;
