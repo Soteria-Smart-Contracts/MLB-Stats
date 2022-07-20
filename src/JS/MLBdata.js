@@ -40,3 +40,8 @@ async function GetPitcherFIP(MLBID){
 
 //BaseLevel Functions
 
+GetPlayerID(FullName){
+    
+}
+
+
