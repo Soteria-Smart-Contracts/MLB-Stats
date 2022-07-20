@@ -16,7 +16,8 @@ async function GetLineups(){
     let total = Boxes.length;
 
     while(index > total){
-        
+        Matchups[index] = {};
+        index++;
         
     }
 }
