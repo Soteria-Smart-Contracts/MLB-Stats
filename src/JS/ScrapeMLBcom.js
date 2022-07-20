@@ -10,15 +10,15 @@ async function GetLineups(){
     const parsedRW = parser1.parseFromString(await (await fetch('https://www.rotowire.com/baseball/daily-lineups.php?date=tomorrow')).text(), "text/html");
     const parsedmlb = parser2.parseFromString(await (await fetch('https://www.mlb.com/scores/')).text(), "text/html");
     //https://cors-anywhere.herokuapp.com/
-    Boxes = parsedRW.getElementsByClassName('lineup__box');
+    BoxesRW = parsedRW.getElementsByClassName('lineup__box');
 
     let index = 0;
     let total = Boxes.length;
 
     while(index < total){
-        console.log(Boxes[index].getElementsByClassName('lineup__mteam is-visit')[index].innerText);
+        console.log(BoxesRW[index].getElementsByClassName('lineup__mteam is-visit')[index].innerText);
         Matchups[index] = {
-            HomeTeam: Boxes[index].getElementsByClassName('lineup__mteam is-visit')[index].innerText,
+            HomeTeam: BoxesRW[index].getElementsByClassName('lineup__mteam is-visit')[index].innerText,
             AwayTeam: Boxes[index].getElementsByClassName('lineup__mteam is-visit')[index].innerText,
 
 
