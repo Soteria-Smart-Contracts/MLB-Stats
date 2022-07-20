@@ -31,6 +31,8 @@ async function GetLineups(){
 
     let index = 0;
     let total = Boxes.length;
+
+    while(index >)
 }
 
 
