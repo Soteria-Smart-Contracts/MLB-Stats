@@ -19,7 +19,7 @@ async function GetLineups(){
     while(index < total){
         console.log(BoxesRW[index].getElementsByClassName('lineup__mteam is-visit')[index].innerText);
         Matchups[index] = {
-            HomeTeam: BoxesRW[index].getElementsByClassName('lineup__mteam is-visit')[index].innerText,
+            HomeTeam: parsedmlb.getElementsByClassName,
             AwayTeam: BoxesRW[index].getElementsByClassName('lineup__mteam is-visit')[index].innerText,
 
 
