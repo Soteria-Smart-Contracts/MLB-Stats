@@ -29,7 +29,6 @@ async function GetLineups(){
     let total = BoxesMLB.length;
 
     while(index < total){
-        console.log(BoxesRW[index].getElementsByClassName('lineup__mteam is-visit')[index].innerText);
         Matchups[index] = {
             HomeTeam: BoxesMLB[index].getElementsByClassName('TeamWrappersstyle__DesktopTeamWrapper-sc-uqs6qh-0 fdaoCu')[0].innerText,
             AwayTeam: BoxesMLB[index].getElementsByClassName('TeamWrappersstyle__DesktopTeamWrapper-sc-uqs6qh-0 fdaoCu')[1].innerText,
