@@ -33,7 +33,7 @@ async function GetLineups(){
 
 //LowLevel Functions
 
-GetPlayerID(){
+GetPlayerID(FullName){
     
 }
 
