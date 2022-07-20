@@ -31,7 +31,7 @@ async function GetLineups(){
 
     let abbrdivs = Boxes[0].getElementsByClassName('lineup__abbr');
     
-    console.log(abbrdivs);
+    console.log(abbrdivs[]);
 }
 
 
