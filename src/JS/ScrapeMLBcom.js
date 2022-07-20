@@ -14,12 +14,11 @@ async function GetLineups(){
     const parsedRW = parser1.parseFromString(await (await fetch('https://www.rotowire.com/baseball/daily-lineups.php?date=tomorrow')).text(), "text/html");
     const parsedmlb = parser2.parseFromString(await (await fetch('https://www.mlb.com/scores/' + formatteddate)).text(), "text/html");
     //https://cors-anywhere.herokuapp.com/
-    BoxesRW = parsedRW.getElementsByClassName('lineup__box');
-    console.log(BoxesRW.typeof);
+    BoxesRW = await parsedRW.getElementsByClassName('lineup__box');
     BoxesRW.pop();
     BoxesRW.pop();
 
-    BoxesMLB = parsedmlb.getElementsByClassName('grid-itemstyle__GridItemWrapper-sc-cq9wv2-0 gmoPjI');
+    BoxesMLB = await parsedmlb.getElementsByClassName('grid-itemstyle__GridItemWrapper-sc-cq9wv2-0 gmoPjI');
 
     console.log(BoxesRW.length);
     console.log(BoxesMLB.length);
