@@ -1,8 +1,6 @@
 let GameDayLinks = [];
 let Matchups = [];
 
-GetGameDayLinks();
-
 
 async function GetLineups(){
     let Boxes = [];
