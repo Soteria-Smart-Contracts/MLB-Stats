@@ -1,5 +1,5 @@
 let GameDayLinks = [];
-le
+let Boxes;
 
 GetGameDayLinks();
 
