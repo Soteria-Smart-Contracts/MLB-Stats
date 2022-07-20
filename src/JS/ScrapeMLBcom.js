@@ -13,8 +13,10 @@ async function GetLineups(){
     BoxesRW = parsedRW.getElementsByClassName('lineup__box');
     BoxesMLB = parsedmlb.getElementsByClassName('grid-itemstyle__GridItemWrapper-sc-cq9wv2-0 gmoPjI');
 
+    if
+
     let index = 0;
-    let total = Boxes.length;
+    let total = BoxesRW.length;
 
     while(index < total){
         console.log(BoxesRW[index].getElementsByClassName('lineup__mteam is-visit')[index].innerText);
