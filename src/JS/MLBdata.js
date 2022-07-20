@@ -46,7 +46,7 @@ async function GetPlayerID(FullName){
 
     let PlayerID = PlayerInfo.search_player_all.queryResults.row.player_id;
 
-    return PlayerInfo;
+    return PlayerID;
 }
 
 
