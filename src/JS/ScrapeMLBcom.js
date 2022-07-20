@@ -20,7 +20,7 @@ async function GetLineups(){
     console.log(BoxesRW.length);
     console.log(BoxesMLB.length);
 
-    if(BoxesRW.length != (BoxesMLB.length - 2)){
+    if(BoxesRW.length != (BoxesMLB)){
         console.log('Game Number Conflict')
         return;
     }
