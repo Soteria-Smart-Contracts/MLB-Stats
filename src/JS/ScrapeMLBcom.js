@@ -29,7 +29,8 @@ async function GetLineups(){
     
     Boxes = parsedSite.getElementsByClassName('lineup__box');
 
-    
+    let index = 0;
+    let total = Boxes.length;
 }
 
 
