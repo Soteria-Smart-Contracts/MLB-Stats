@@ -30,7 +30,7 @@ async function GetLineups(){
 
     
 
-    return Lineups;
+    return Boxes;
 }
 
 
