@@ -18,10 +18,10 @@ async function GetLineups(){
     BoxesMLB = await parsedmlb.getElementsByClassName('grid-itemstyle__GridItemWrapper-sc-cq9wv2-0 gmoPjI');
 
     console.log(BoxesRW.length - 2);
-    BoxesRWal = Boxes
+    BoxesRWal = BoxesRW.length - 2;
     console.log(BoxesMLB.length);
 
-    if(await (BoxesRW.length - 2) != BoxesMLB){
+    if(Box != BoxesMLB){
         console.log('Game Number Conflict')
         return;
     }
