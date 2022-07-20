@@ -30,7 +30,7 @@ async function GetLineups(){
 
     
 
-    return Boxes[0].getElementsByClassName('lineup__team');
+    return Boxes[0].getElementsByClassName('lineup__team').innerText;
 }
 
 
