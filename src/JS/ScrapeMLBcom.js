@@ -18,7 +18,12 @@ async function GetGameDayLinks(){
     return GameDayLinks;
 }
 
-async function GetLineups()
+async function GetLineups(){
+    let Lineups = [];
+    let index = 0;
+
+    return Lineups;
+}
 
 
 
