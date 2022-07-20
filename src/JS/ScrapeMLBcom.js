@@ -33,11 +33,6 @@ async function GetLineups(){
 
 //LowLevel Functions
 
-GetPlayerID(FullName){
-    
-}
-
-
 function ParseBoxesForLinks(LinkBoxes){
     index = 0;
     total = LinkBoxes.length;
