@@ -41,7 +41,8 @@ async function GetPitcherFIP(MLBID){
 //BaseLevel Functions
 
 GetPlayerID(FullName){
-    ///json/named.search_player_all.bam?sport_code='mlb'&active_sw={active_sw}&name_part={name_part}
+    
+    let StatRequest = await fetch(`${APIprefix}/json/named.sport_pitching_tm.bam?league_list_id='mlb'&game_type='R'&season='2022'&player_id=${MLBID}`)
 }
 
 
