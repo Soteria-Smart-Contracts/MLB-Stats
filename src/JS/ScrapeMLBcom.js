@@ -13,7 +13,9 @@ async function GetLineups(){
     BoxesRW = parsedRW.getElementsByClassName('lineup__box');
     BoxesMLB = parsedmlb.getElementsByClassName('grid-itemstyle__GridItemWrapper-sc-cq9wv2-0 gmoPjI');
 
-    if
+    if(BoxesRW.length != BoxesMLB.length){
+        Boxes = BoxesMLB;
+    }
 
     let index = 0;
     let total = BoxesRW.length;
