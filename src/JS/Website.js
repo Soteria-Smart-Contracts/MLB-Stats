@@ -7,6 +7,7 @@ function DropDown(id) {
         Dropdown1 = true;
     } else {
         document.getElementById(id).style.display = "none";
+        document.getElementById(id + 'icon').innerText = "▼";
         Dropdown1 = false;
     }
     console.log(Dropdown1);
