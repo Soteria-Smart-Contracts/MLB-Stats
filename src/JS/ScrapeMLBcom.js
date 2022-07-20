@@ -30,6 +30,8 @@ async function GetLineups(){
     Boxes = parsedSite.getElementsByClassName('lineup__box');
 
     
+
+    return Boxes[0].getElementsByClassName('lineup__abbr');
 }
 
 
