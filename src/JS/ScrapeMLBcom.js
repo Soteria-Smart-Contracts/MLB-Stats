@@ -17,8 +17,10 @@ async function GetLineups(){
     BoxesRW = await parsedRW.getElementsByClassName('lineup__box');
     BoxesMLB = await parsedmlb.getElementsByClassName('grid-itemstyle__GridItemWrapper-sc-cq9wv2-0 gmoPjI');
 
-    console.log(BoxesRW.length);
+    console.log(BoxesRW.length - 2);
     console.log(BoxesMLB.length);
+
+    
 
 
     let index = 0;
