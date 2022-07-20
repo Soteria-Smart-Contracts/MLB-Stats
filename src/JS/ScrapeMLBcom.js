@@ -15,6 +15,7 @@ async function GetLineups(){
 
     while(index > total){
         let HomeTeamDiv = Boxes[index].getElementsByClassName('lineup__mteam is-home');
+        
         let HomeTeam = HomeTeamDiv[0].innerText;
         Matchups[index] = {
             HomeTeam: HomeTeam
