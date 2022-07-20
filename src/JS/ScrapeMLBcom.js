@@ -30,7 +30,7 @@ async function GetLineups(){
     }
 
     let index = 0;
-    let total = Boxesmlb.length;
+    let total = BoxesMLB.length;
 
     while(index < total){
         console.log(BoxesRW[index].getElementsByClassName('lineup__mteam is-visit')[index].innerText);
