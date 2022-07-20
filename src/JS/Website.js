@@ -1,4 +1,4 @@
 
 function OpenDropDown(id) {
-    document.getElementById
+    document.getElementById(id).style.display
 }
