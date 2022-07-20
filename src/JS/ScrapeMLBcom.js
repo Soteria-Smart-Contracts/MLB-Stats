@@ -18,7 +18,7 @@ async function GetLineups(){
     BoxesMLB = await parsedmlb.getElementsByClassName('grid-itemstyle__GridItemWrapper-sc-cq9wv2-0 gmoPjI');
 
     console.log(BoxesRW.length - 2);
-    BoxesRW
+    BoxesRWal = Boxes
     console.log(BoxesMLB.length);
 
     if(await (BoxesRW.length - 2) != BoxesMLB){
