@@ -25,7 +25,7 @@ async function GetLineups(){
     const parser = new DOMParser();
     const parsedSite = parser.parseFromString(await (await fetch('https://cors-anywhere.herokuapp.com/https://www.rotowire.com/baseball/daily-lineups.php?date=tomorrow')).text(), "text/html");
     
-    
+    let LineupBoxes = parsedSite.getElementsByClassName('lineup-box');
 
     
 
