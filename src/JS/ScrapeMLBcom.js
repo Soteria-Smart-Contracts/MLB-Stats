@@ -31,7 +31,7 @@ async function GetLineups(){
 
     
 
-    return Boxes[0].getElementsByClassName('lineup__abbr').innerText;
+    return Boxes[0].getElementsByClassName('lineup__abbr');
 }
 
 
