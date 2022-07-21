@@ -63,7 +63,9 @@ async function GetLineupOrders(BoxesRW){
     let HomeLineup = [];
     let AwayLineyup = [];
     while(index < total){
-        if(index )
+        if(index < 8){
+            
+        }
         index++;
     }
     
