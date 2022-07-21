@@ -46,7 +46,7 @@ async function GetPlayerID(FullName){
 
     let PlayerID = await PlayerInfo.search_player_all.queryResults.row.player_id;
 
-    cons
+    console.log(PlayerID);
 
     return PlayerID;
 }
