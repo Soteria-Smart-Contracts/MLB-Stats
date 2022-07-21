@@ -83,12 +83,12 @@ async function GetLineupOrders(BoxesRW){
     let LineupIndexHome = 0;
     while(index < total){
         if(index <= 8){
-            AwayLineup[LineupIndexAway] = LineupBoxes[index].getElementsByTagName('a')[0].title;
+            AwayLineup[LineupIndexAway] = await LineupBoxes[index].getElementsByTagName('a')[0].title;
             AwayLineupIDs[LineupIndexAway] = await GetPlayerID(AwayLineup[LineupIndexAway]);
             LineupIndexAway++;
         }
         if(index >= 9){
-            HomeLineup[LineupIndexHome] = LineupBoxes[index].getElementsByTagName('a')[0].title;
+            HomeLineup[LineupIndexHome] = await LineupBoxes[index].getElementsByTagName('a')[0].title;
             HomeLineupIDs[LineupIndexHome] = await GetPlayerID(HomeLineup[LineupIndexHome]);
             LineupIndexHome++;
         }
