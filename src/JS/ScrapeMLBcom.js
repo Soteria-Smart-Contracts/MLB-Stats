@@ -57,7 +57,7 @@ function ParseBoxesForLinks(LinkBoxes){
     return Links;
 }
 
-function GetLineup
+function GetLineupOrder()
 
 // Deprecated functions
 
