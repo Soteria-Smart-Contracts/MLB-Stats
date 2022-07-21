@@ -61,6 +61,7 @@ async function GetLineupOrders(BoxesMLB){
     index = 0;
     total = BoxesMLB.length;
     let HomeLineup = [];
+    AwayLi
 
 }
 
