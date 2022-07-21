@@ -29,7 +29,7 @@ async function GetLineups(){
     let index = 0;
     let total = BoxesMLB.length;
 
-    GetLineupOrders(BoxesRW[1]);
+    GetLineupOrders(BoxesRW[0]);
 
     while(index < total){
         Matchups[index] = {
