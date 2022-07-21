@@ -46,7 +46,7 @@ async function GetLineups(){
         index++;
         
     }
- //   HomeLineup = [];
+    HomeLineup = [];
   //  AwayLineup = [];
 }
 
@@ -75,12 +75,12 @@ async function GetLineupOrders(BoxesRW){
     let LineupIndexHome = 0;
     while(index < total){
         if(LineupIndexAway <= 8){
-            AwayLineup[LineupIndexAway] = LineupBoxes[index].getElementsByTagName('a')[0].innerText;
+            AwayLineup[LineupIndexAway] = LineupBoxes[index].getElementsByTagName('a')[0].title;
             console.log(AwayLineup[LineupIndexAway]);
             LineupIndexAway++;
         }
         if(index >= 9){
-            HomeLineup[LineupIndexHome] = LineupBoxes[index].getElementsByTagName('a')[0].innerText;
+            HomeLineup[LineupIndexHome] = LineupBoxes[index].getElementsByTagName('a')[0].title;
             console.log(HomeLineup[LineupIndexHome]);
             LineupIndexHome++;
         }
