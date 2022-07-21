@@ -44,9 +44,9 @@ async function GetPlayerID(FullName){
     let StatRequest = await fetch(`${APIprefix}/json/named.search_player_all.bam?sport_code='mlb'&active_sw='Y'&name_part='${FullName}'`)
     let PlayerInfo = await StatRequest.json();
 
-    let PlayerID = PlayerInfo.search_player_all.queryResults.row.player_id;
+    let PlayerID = await PlayerInfo.search_player_all.queryResults.row.player_id;
 
-
+    cons
 
     return PlayerID;
 }
