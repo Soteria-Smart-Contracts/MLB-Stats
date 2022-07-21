@@ -29,6 +29,8 @@ async function GetLineups(){
     let index = 0;
     let total = BoxesMLB.length;
 
+    GetLineupOrders()
+
     while(index < total){
         Matchups[index] = {
             HomeTeam: BoxesMLB[index].getElementsByClassName('TeamWrappersstyle__DesktopTeamWrapper-sc-uqs6qh-0 fdaoCu')[1].innerText,
