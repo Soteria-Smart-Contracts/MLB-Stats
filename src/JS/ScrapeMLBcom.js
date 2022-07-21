@@ -2,6 +2,9 @@ let GameDayLinks = [];
 let Matchups = [];
 let BoxesMLB;
 
+let HomeLineup = [];
+let AwayLineup = [];
+
 
 async function GetLineups(){
     let Boxes = [];
