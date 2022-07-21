@@ -38,7 +38,8 @@ async function GetLineups(){
             AwayTeam: BoxesMLB[index].getElementsByClassName('TeamWrappersstyle__DesktopTeamWrapper-sc-uqs6qh-0 fdaoCu')[0].innerText,
             HomeTeamRecord: BoxesMLB[index].getElementsByClassName('teamstyle__TeamLabel-sc-1suh43a-3 teamstyle__DesktopRecordWrapper-sc-1suh43a-4 gbRmLr')[1].innerText,
             AwayTeamRecord: BoxesMLB[index].getElementsByClassName('teamstyle__TeamLabel-sc-1suh43a-3 teamstyle__DesktopRecordWrapper-sc-1suh43a-4 gbRmLr')[0].innerText,
-            HomeTeamLineup: ,
+            HomeTeamLineup: HomeLineup,
+            
             HomeTeamLineupIDs: 
 
 
