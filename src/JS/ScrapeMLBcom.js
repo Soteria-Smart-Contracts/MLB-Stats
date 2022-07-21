@@ -61,8 +61,8 @@ async function GetLineupOrders(BoxesRW){
     index = 0;
     total = BoxesMLB.length;
     let HomeLineup = [];
-    let AwayLineyup
-    while(index < total){
+    let AwayLineyup = [];
+    
 }
 
 // Deprecated functions
