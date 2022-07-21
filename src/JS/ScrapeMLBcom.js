@@ -68,7 +68,7 @@ async function GetLineupOrders(BoxesRW){
             AwayLineup[index] = BoxesMLB[index].getElementsByClassName('TeamWrappersstyle__DesktopTeamWrapper-sc-uqs6qh-0 fdaoCu')[1].innerText;
             lineupindex++;
         }
-        if(index >= 9){
+        if(index > 9){
         index++;
     }
     
