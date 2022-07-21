@@ -87,7 +87,7 @@ async function GetLineupOrders(BoxesRW){
         }
         if(index >= 9){
             HomeLineup[LineupIndexHome] = LineupBoxes[index].getElementsByTagName('a')[0].title;
-            
+            HomeLineupIDs[LineupIndexHome] = await GetPlayerID(HomeLineup[LineupIndexHome]);
             LineupIndexHome++;
         }
         index++;
