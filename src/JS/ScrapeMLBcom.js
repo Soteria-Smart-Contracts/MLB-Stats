@@ -74,7 +74,7 @@ async function GetLineupOrders(BoxesRW){
     let LineupIndexAway = 0;
     let LineupIndexHome = 0;
     while(index < total){
-        if(LineupIndexAway < 8){
+        if(LineupIndexAway <= 8){
             AwayLineup[LineupIndexAway] = LineupBoxes[index].getElementsByTagName('a')[0].innerText;
             console.log(AwayLineup[LineupIndexAway]);
             LineupIndexAway++;
