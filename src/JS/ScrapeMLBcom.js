@@ -57,11 +57,11 @@ function ParseBoxesForLinks(LinkBoxes){
     return Links;
 }
 
-async function GetLineupOrders(BoxesMLB){
+async function GetLineupOrders(BoxesRW){
     index = 0;
     total = BoxesMLB.length;
     let HomeLineup = [];
-    AwayLi
+    let AwayLineyup
 
 }
 
