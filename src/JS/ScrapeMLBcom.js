@@ -57,6 +57,8 @@ function ParseBoxesForLinks(LinkBoxes){
     return Links;
 }
 
+function GetLineup
+
 // Deprecated functions
 
 async function GetGameDayLinks(){
