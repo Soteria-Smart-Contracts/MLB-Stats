@@ -82,7 +82,7 @@ async function GetLineupOrders(BoxesRW){
         }
         if(index >= 9){
             HomeLineup[LineupIndexHome] = LineupBoxes[index].getElementsByTagName('a')[0].innerText;
-            console.log(AwayLineup[LineupIndexAway]);
+            console.log(HomeLineup[HomeIndexAway]);
             LineupIndexHome++;
         }
         index++;
