@@ -71,6 +71,8 @@ async function GetLineupOrders(BoxesRW){
     total = LineupBoxes.length;
     HomeLineup = [];
     AwayLineup = [];
+    HomeLineupIDs = [];
+    AwayLineupIDs = [];
     let LineupIndexAway = 0;
     let LineupIndexHome = 0;
     while(index < total){
