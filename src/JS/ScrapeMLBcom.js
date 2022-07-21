@@ -67,9 +67,6 @@ async function GetLineupOrders(BoxesRW){
         if(index < 8){
             HomeLineup[index] = BoxesMLB[index].getElementsByClassName('TeamWrappersstyle__DesktopTeamWrapper-sc-uqs6qh-0 fdaoCu')[1].innerText;
             lineupindex++;
-            if(lineupindex = 8){
-                AwayLineyup[index] = BoxesMLB[index].getElementsByClassName('TeamWrappersstyle__DesktopTeamWrapper-sc-uqs6qh-0 fdaoCu')[0].innerText;
-            }
         }
         index++;
     }
