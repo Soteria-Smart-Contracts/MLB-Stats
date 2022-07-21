@@ -26,7 +26,7 @@ async function GetLineups(){
         return;
     }
 
-    let index = 0;
+    let index = 1;
     let total = BoxesMLB.length;
 
     GetLineupOrders(BoxesRW[0]);
