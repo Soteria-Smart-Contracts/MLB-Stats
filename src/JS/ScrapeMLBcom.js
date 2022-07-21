@@ -65,8 +65,8 @@ async function GetGameDayLinks(){
     let formatteddate = `${currentDate.getFullYear()}-${month}-21`;
     
     const parser = new DOMParser();
-    const parsedSite = parser.parseFromString(await (await fetch('https://cors-anywhere.herokuapp.com/https://www.mlb.com/scores/' + formatteddate)).text(), "text/html");
-
+    const parsedSite = parser.parseFromString(await (await fetch('https://www.mlb.com/scores/' + formatteddate)).text(), "text/html");
+//https://cors-anywhere.herokuapp.com/
     LinkBoxes = parsedSite.getElementsByClassName('linkstyle__AnchorElement-sc-1rt6me7-0 lcFuuA getProductButtons__ButtonLink-sc-bgnczd-1 elIcfn trk-preview');
     GameDayLinks = await ParseBoxesForLinks(LinkBoxes);
 
