@@ -47,7 +47,7 @@ async function GetPlayerID(FullName){
     try { PlayerID = await PlayerInfo.search_player_all.queryResults.row.player_id;
     } catch(err){
         console.log(err);
-        return(0000000);
+        PlayerID = 000000;
     }
 
     console.log(PlayerID);
