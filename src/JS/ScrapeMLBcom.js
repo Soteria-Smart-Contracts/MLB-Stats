@@ -11,11 +11,11 @@ async function GetLineups(){
 
     let currentDate = new Date;
     let month = '0' + (currentDate.getMonth() + 1);
-    let formatteddate = `${currentDate.getFullYear()}-${month}-22`;
+    let formatteddate = `${currentDate.getFullYear()}-${month}-21`;
 
     const parser1 = new DOMParser();
     const parser2 = new DOMParser();
-    const parsedRW = parser1.parseFromString(await (await fetch('https://www.rotowire.com/baseball/daily-lineups.php?date=' + formatteddate)).text(), "text/html");
+    const parsedRW = parser1.parseFromString(await (await fetch('https://www.rotowire.com/baseball/daily-lineups.php?date=tomorrow')).text(), "text/html");
     const parsedmlb = parser2.parseFromString(await (await fetch('https://www.mlb.com/scores/' + formatteddate)).text(), "text/html");
     //https://cors-anywhere.herokuapp.com/
     let BoxesRW = await parsedRW.getElementsByClassName('lineup__box');
