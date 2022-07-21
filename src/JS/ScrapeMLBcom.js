@@ -50,6 +50,7 @@ async function GetLineups(){
         AwayLineup = [];
         HomeLineupIDs = [];
         AwayLineupIDs = [];
+        console.log(passed)
         index++;
         
     }
