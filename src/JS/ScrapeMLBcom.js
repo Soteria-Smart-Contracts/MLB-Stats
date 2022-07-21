@@ -72,7 +72,7 @@ function ParseBoxesForLinks(LinkBoxes){
 async function GetLineupOrders(BoxesRW){
     let LineupBoxes = BoxesRW.getElementsByClassName('lineup__player');
     console.log(LineupBoxes);
-    index = 0;
+    index = 1;
     total = LineupBoxes.length;
     HomeLineup = [];
     AwayLineup = [];
