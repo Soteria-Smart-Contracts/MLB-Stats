@@ -82,7 +82,7 @@ async function GetLineupOrders(BoxesRW){
     let LineupIndexAway = 0;
     let LineupIndexHome = 0;
     while(index < total){
-        if(LineupIndexAway <= 8){
+        if(index <= 8){
             AwayLineup[LineupIndexAway] = LineupBoxes[index].getElementsByTagName('a')[0].title;
             AwayLineupIDs[LineupIndexAway] = await GetPlayerID(AwayLineup[LineupIndexAway]);
             LineupIndexAway++;
