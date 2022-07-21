@@ -1,5 +1,6 @@
 let GameDayLinks = [];
 let Matchups = [];
+let BoxesMLB;
 
 
 async function GetLineups(){
@@ -15,7 +16,7 @@ async function GetLineups(){
     const parsedmlb = parser2.parseFromString(await (await fetch('https://www.mlb.com/scores/' + formatteddate)).text(), "text/html");
     //https://cors-anywhere.herokuapp.com/
     let BoxesRW = await parsedRW.getElementsByClassName('lineup__box');
-    let BoxesMLB = await parsedmlb.getElementsByClassName('grid-itemstyle__GridItemWrapper-sc-cq9wv2-0 gmoPjI');
+    BoxesMLB = await parsedmlb.getElementsByClassName('grid-itemstyle__GridItemWrapper-sc-cq9wv2-0 gmoPjI');
 
     console.log(BoxesRW.length - 2);
     console.log(BoxesMLB.length);
