@@ -57,7 +57,7 @@ function ParseBoxesForLinks(LinkBoxes){
     return Links;
 }
 
-function GetLineupOrder()
+function GetLineupOrders(MLB)
 
 // Deprecated functions
 
