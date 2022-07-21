@@ -11,7 +11,7 @@ async function GetLineups(){
 
     let currentDate = new Date;
     let month = '0' + (currentDate.getMonth() + 1);
-    let formatteddate = `${currentDate.getFullYear()}-${month}-21`;
+    let formatteddate = `${currentDate.getFullYear()}-${month}-22`;
 
     const parser1 = new DOMParser();
     const parser2 = new DOMParser();
