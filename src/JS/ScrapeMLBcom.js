@@ -77,7 +77,7 @@ async function GetLineupOrders(BoxesRW){
         }
         index++;
     }
-    return ;
+    return HomeLineup, AwayLineup;
 }
 
 // Deprecated functions
