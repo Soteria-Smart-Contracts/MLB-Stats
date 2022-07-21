@@ -32,7 +32,7 @@ async function GetLineups(){
     GetLineupOrders(BoxesRW[0]);
 
     while(index < total){
-        
+        GetLineupOrders(BoxesRW[index])
         Matchups[index] = {
             HomeTeam: BoxesMLB[index].getElementsByClassName('TeamWrappersstyle__DesktopTeamWrapper-sc-uqs6qh-0 fdaoCu')[1].innerText,
             AwayTeam: BoxesMLB[index].getElementsByClassName('TeamWrappersstyle__DesktopTeamWrapper-sc-uqs6qh-0 fdaoCu')[0].innerText,
