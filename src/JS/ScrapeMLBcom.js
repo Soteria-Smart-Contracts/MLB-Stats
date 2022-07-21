@@ -46,8 +46,6 @@ async function GetLineups(){
         index++;
         
     }
-    HomeLineup = [];
-  //  AwayLineup = [];
 }
 
 
