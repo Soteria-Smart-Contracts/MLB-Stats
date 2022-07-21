@@ -58,6 +58,7 @@ function ParseBoxesForLinks(LinkBoxes){
 }
 
 async function GetLineupOrders(BoxesMLB){
+    index
 
 }
 
