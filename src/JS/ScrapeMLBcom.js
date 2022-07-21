@@ -65,10 +65,10 @@ async function GetLineupOrders(BoxesRW){
     while(index < total){
         let lineupindex;
         if(index <= 8){
-            HomeLineup[index] = BoxesMLB[index].getElementsByClassName('TeamWrappersstyle__DesktopTeamWrapper-sc-uqs6qh-0 fdaoCu')[1].innerText;
+            AwayLineup[index] = BoxesMLB[index].getElementsByClassName('TeamWrappersstyle__DesktopTeamWrapper-sc-uqs6qh-0 fdaoCu')[1].innerText;
             lineupindex++;
         }
-        if
+        if(index >= 9){
         index++;
     }
     
