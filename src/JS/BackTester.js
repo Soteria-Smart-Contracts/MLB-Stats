@@ -41,8 +41,8 @@ async function BackTestSeason(){
         PitcherOneFIP = GetPitcherFIPfromName(json[i][i][0]);
         } 
         catch(err){errors = errors + 1; console.log(errors)}
-        
-        PitcherTwoFIP = GetPitcherFIPfromName(json[i][i][1]);
+
+        PitcherTwoFIP
         Over = json[i][i][3];
         console.log(PitcherOneFIP);
         console.log(PitcherTwoFIP);
