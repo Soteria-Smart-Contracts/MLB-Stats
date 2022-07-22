@@ -50,6 +50,7 @@ async function BackTestSeason(){
         console.log(PitcherOneFIP);
         console.log(PitcherTwoFIP);
     }
+    console.log(errors);
 
 
 }
