@@ -1,3 +1,5 @@
-let SeasonData = ""
+let SeasonData = "src/"
 
 readXlsxFile().then(function(data) {
+
+    src/
