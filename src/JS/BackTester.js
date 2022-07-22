@@ -39,7 +39,7 @@ async function BackTestSeason(){
     for(let i = 0; i < json.length; i++){
         PitcherOne = json[i][i][0];
         PitcherTwo = json[i][i][1];
-        Ov
+        Over
     }
 
 
