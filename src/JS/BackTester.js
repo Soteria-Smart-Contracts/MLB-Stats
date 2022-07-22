@@ -34,8 +34,9 @@ async function BackTestSeason(){
     let FourNine = [0,0,0];
     let FiveZeroO = [0,0,0];
 
+    let json = await GetJson();
 
-
+    
 
 
 }
