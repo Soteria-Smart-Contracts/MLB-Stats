@@ -33,7 +33,7 @@ async function GetPitcherFIP(MLBID){
     return(FIP);
 }
 
-
+async GetPitcherFIPfromName(FullName){
 
 
 
