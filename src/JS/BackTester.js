@@ -32,5 +32,6 @@ async function BackTestSeason(){
     let FourSeven = [0,0,0];
     let FourEight = [0,0,0];
     let FourNine = [0,0,0];
+    let FiveZeroO = [0,0,0];
 }
 
