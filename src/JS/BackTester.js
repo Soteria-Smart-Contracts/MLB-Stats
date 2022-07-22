@@ -37,8 +37,8 @@ async function BackTestSeason(){
     let json = await GetJson();
 
     for(let i = 0; i < json.length; i++){
-        PitcherOneFIP =  try {
-        GetPitcherFIPfromName(json[i][i][0]);
+        try {
+        PitcherOneFIP =  GetPitcherFIPfromName(json[i][i][0]);
         } 
         catch(err){errors = errors + 1; console.log(errors)}
         PitcherTwoFIP = GetPitcherFIPfromName(json[i][i][1]);
