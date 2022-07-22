@@ -7,6 +7,7 @@ async function GetJson(){
 }
 
 async function BackTestSeason(){
-    let TFU = [];
+    let TFU = [0,0,0];
+    
 }
 
