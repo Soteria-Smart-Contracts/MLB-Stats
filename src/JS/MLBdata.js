@@ -34,7 +34,9 @@ async function GetPitcherFIP(MLBID){
 }
 
 async function GetPitcherFIPfromName(FullName){
-    
+    let PlayerID = await GetPlayerID(FullName);
+    let FIP = await GetPitcherFIP(PlayerID);
+    return FIP;
 }
 
 
