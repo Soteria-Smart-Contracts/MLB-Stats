@@ -36,7 +36,9 @@ async function BackTestSeason(){
 
     let json = await GetJson();
 
-    
+    for(let i = 0; i < json.length; i++){
+        
+    }
 
 
 }
