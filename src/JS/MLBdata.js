@@ -17,7 +17,7 @@ async function GetBatterOBP(MLBID){
     console.log(PlayerOBP);
 }
 
-async function GetPitcherFIPByID(MLBID){
+async function GetPitcherFIP(MLBID){
     let StatRequest = await fetch(`${APIprefix}/json/named.sport_pitching_tm.bam?league_list_id='mlb'&game_type='R'&season='2022'&player_id=${MLBID}`)
     let PlayerPitchingStats = await StatRequest.json();
     
@@ -32,6 +32,7 @@ async function GetPitcherFIPByID(MLBID){
 
     return(FIP);
 }
+
 
 
 
