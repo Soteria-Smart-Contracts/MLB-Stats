@@ -37,7 +37,7 @@ async function BackTestSeason(){
     let json = await GetJson();
 
     for(let i = 0; i < json.length; i++){
-        PitcherOne = json[i][i][].PitcherOne;
+        PitcherOne = json[i][i][0];
     }
 
 
