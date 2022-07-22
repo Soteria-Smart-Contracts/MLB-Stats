@@ -1,6 +1,6 @@
 
 
-async function ReadJson(){
+async function GetJson(){
     let request = await fetch("src/SeasonData2021.json");
     let json= await request.json();
     currentarray = json[1];
