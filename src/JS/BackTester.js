@@ -8,6 +8,7 @@ async function GetJson(){
 
 async function BackTestSeason(){
     let TwoFiveU = [0,0,0];
-    let 
+    let TwoSix = [0,0,0];
+    
 }
 
