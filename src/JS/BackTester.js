@@ -8,3 +8,5 @@ async function ReadJson(){
     return json;
 }
 
+async function BackTestSeason()
+
