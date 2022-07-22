@@ -57,8 +57,6 @@ async function GetPlayerID(FullName){
         PlayerID = 000000;
     }
 
-    console.log(PlayerID);
-
     return PlayerID;
 }
 
