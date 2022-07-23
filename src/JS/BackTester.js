@@ -321,7 +321,8 @@ async function BackTestSeason(){
         console.log(PitcherOneFIP);
         console.log(PitcherTwoFIP);
     }
-    console.log('TwoFiveUnder' + )
+    console.log('TwoFiveUnder' + TwoFiveUnder);
+
 
 
 }
