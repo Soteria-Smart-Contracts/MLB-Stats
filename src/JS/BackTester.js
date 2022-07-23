@@ -75,6 +75,9 @@ async function BackTestSeason(){
                 }
         }
 
+        if(ValidData == true && AverageFIP > 2.699 && AverageFIP <= 2.799){
+            
+
 
 
         console.log(PitcherOneFIP);
