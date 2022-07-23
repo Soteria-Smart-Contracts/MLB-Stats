@@ -42,9 +42,9 @@ async function BackTestSeason(){
         let PitcherOneFIP = 0; 
         let PitcherTwoFIP = 0;
         try{ PitcherOneFIP = await GetPitcherFIPfromName(json[i][i][0]);}
-        catch(err){ ValidData = false; }
+        catch(err){}
         try{ PitcherTwoFIP = await GetPitcherFIPfromName(json[i][i][1]);}
-        catch(err){ ValidData = false; }
+        catch(err){}
         if(PitcherOneFIP == 0 || PitcherOneFIP == 'NaN' || PitcherTwoFIP == 0 || PitcherTwoFIP == 'NaN'){
             ValidData = false;
             errors++;
