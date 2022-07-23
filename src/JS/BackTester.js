@@ -55,7 +55,7 @@ async function BackTestSeason(){
 
         if(Over == 1 && ValidData && AverageFIP <= 2.599){
                 TwoFiveU[0]++;
-                TwoFiveU[1] += AverageFIP;
+                TwoFiveU[1] += ;
                 TwoFiveU[2] += AverageFIP * AverageFIP;
             }
         }
