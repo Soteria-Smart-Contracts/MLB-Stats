@@ -318,10 +318,6 @@ async function BackTestSeason(){
                 FiveZeroO[2]++;
                 }
         }
-        
-
-
-
         console.log(PitcherOneFIP);
         console.log(PitcherTwoFIP);
     }
