@@ -342,11 +342,11 @@ async function BackTestSeason(){
     console.log('FourThree' + FourThree);
     console.log('FourFour' + FourFour);
     console.log('FourFive' + FourFive);
-        console.log('FourSix' + FourSix);
-        console.log('FourSeven' + FourSeven);
-        console.log('FourEight' + FourEight);
-        console.log('FourNine' + FourNine);
-        console.log('FiveZeroO' + FiveZeroO);
+    console.log('FourSix' + FourSix);
+    console.log('FourSeven' + FourSeven);
+    console.log('FourEight' + FourEight);
+    console.log('FourNine' + FourNine);
+    console.log('FiveZeroO' + FiveZeroO);
 
 
 
