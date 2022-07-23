@@ -324,8 +324,8 @@ async function BackTestSeason(){
     console.log('TwoFiveUnder' + TwoFiveUnder);
     console.log('TwoSix' + TwoSix);
     console.log('TwoSeven' + TwoSeven);
-        console.log('TwoEight' + TwoEight);
-        console.log('TwoNine' + TwoNine);
+    console.log('TwoEight' + TwoEight);
+    console.log('TwoNine' + TwoNine);
         console.log('ThreeZero' + ThreeZero);
         console.log('ThreeOne' + ThreeOne);
         console.log('ThreeTwo' + ThreeTwo);
