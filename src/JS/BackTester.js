@@ -326,12 +326,12 @@ async function BackTestSeason(){
     console.log('TwoSeven' + TwoSeven);
     console.log('TwoEight' + TwoEight);
     console.log('TwoNine' + TwoNine);
-        console.log('ThreeZero' + ThreeZero);
-        console.log('ThreeOne' + ThreeOne);
-        console.log('ThreeTwo' + ThreeTwo);
-        console.log('ThreeThree' + ThreeThree);
-        console.log('ThreeFour' + ThreeFour);
-        console.log('ThreeFive' + ThreeFive);
+    console.log('ThreeZero' + ThreeZero);
+    console.log('ThreeOne' + ThreeOne);
+    console.log('ThreeTwo' + ThreeTwo);
+    console.log('ThreeThree' + ThreeThree);
+    console.log('ThreeFour' + ThreeFour);
+    console.log('ThreeFive' + ThreeFive);
         console.log('ThreeSix' + ThreeSix);
         console.log('ThreeSeven' + ThreeSeven);
         console.log('ThreeEight' + ThreeEight);
