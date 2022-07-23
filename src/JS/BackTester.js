@@ -64,7 +64,16 @@ async function BackTestSeason(){
                 }
         }
 
-        if
+        if(ValidData == true && AverageFIP > 2.599 && AverageFIP <= 2.699){
+                if(Over == 1){
+                TwoSix[0]++;
+                TwoSix[2]++;
+                }
+                else if(Over == 0){
+                TwoSix[1]++;
+                TwoSix[2]++;
+                }
+        }
 
 
 
