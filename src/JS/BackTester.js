@@ -311,11 +311,11 @@ async function BackTestSeason(){
         if (ValidData == true && AverageFIP > 4.999){
                 if(Over == 1){
                 FiveZeroO[0]++;
-                FiveZero[2]++;
+                FiveZeroO[2]++;
                 }
                 else if(Over == 0){
-                FiveZero[1]++;
-                FiveZero[2]++;
+                FiveZeroO[1]++;
+                FiveZeroO[2]++;
                 }
         }
         
