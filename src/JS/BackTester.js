@@ -133,6 +133,11 @@ async function BackTestSeason(){
                 ThreeTwo[0]++;
                 ThreeTwo[2]++;
                 }
+                else if(Over == 0){
+                ThreeTwo[1]++;
+                ThreeTwo[2]++;
+                }
+        }
         
 
 
