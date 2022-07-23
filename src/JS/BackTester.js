@@ -108,7 +108,12 @@ async function BackTestSeason(){
                 }
         }
 
-        
+        if(ValidData == true && AverageFIP > 2.999 && AverageFIP <= 3.099){
+                if(Over == 1){
+                ThreeZero[0]++;
+                ThreeZero[2]++;
+                }
+                
 
 
 
