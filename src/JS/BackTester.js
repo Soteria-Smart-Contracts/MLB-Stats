@@ -138,6 +138,66 @@ async function BackTestSeason(){
                 ThreeTwo[2]++;
                 }
         }
+        if (ValidData == true && AverageFIP > 3.299 && AverageFIP <= 3.399){
+                if(Over == 1){
+                ThreeThree[0]++;
+                ThreeThree[2]++;
+                }
+                else if(Over == 0){
+                ThreeThree[1]++;
+                ThreeThree[2]++;
+                }
+        }
+        if (ValidData == true && AverageFIP > 3.399 && AverageFIP <= 3.499){
+                if(Over == 1){
+                ThreeFour[0]++;
+                ThreeFour[2]++;
+                }
+                else if(Over == 0){
+                ThreeFour[1]++;
+                ThreeFour[2]++;
+                }
+        }
+        if (ValidData == true && AverageFIP > 3.499 && AverageFIP <= 3.599){
+                if(Over == 1){
+                ThreeFive[0]++;
+                ThreeFive[2]++;
+                }
+                else if(Over == 0){
+                ThreeFive[1]++;
+                ThreeFive[2]++;
+                }
+        }
+        if (ValidData == true && AverageFIP > 3.599 && AverageFIP <= 3.699){
+                if(Over == 1){
+                ThreeSix[0]++;
+                ThreeSix[2]++;
+                }
+                else if(Over == 0){
+                ThreeSix[1]++;
+                ThreeSix[2]++;
+                }
+        }
+        if (ValidData == true && AverageFIP > 3.699 && AverageFIP <= 3.799){
+                if(Over == 1){
+                ThreeSeven[0]++;
+                ThreeSeven[2]++;
+                }
+                else if(Over == 0){
+                ThreeSeven[1]++;
+                ThreeSeven[2]++;
+                }
+        }
+        if (ValidData == true && AverageFIP > 3.799 && AverageFIP <= 3.899){
+                if(Over == 1){
+                ThreeEight[0]++;
+                ThreeEight[2]++;
+                }
+                else if(Over == 0){
+                ThreeEight[1]++;
+                ThreeEight[2]++;
+                }
+        }
         
         
 
