@@ -41,7 +41,7 @@ async function BackTestSeason(){
         let ValidData = true;
         let PitcherOneFIP = 0; 
         let PitcherTwoFIP = 0;
-        try{ PitcherOneFIP = await GetPitcherFIPfromName(json[i][i][0]);}
+        try{ PitcherOneFIP = await parseFloat.(GetPitcherFIPfromName(json[i][i][0]));}
         catch(err){}
         try{ PitcherTwoFIP = await GetPitcherFIPfromName(json[i][i][1]);}
         catch(err){}
