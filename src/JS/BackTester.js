@@ -59,7 +59,9 @@ async function BackTestSeason(){
                 TwoFiveU[2]++;
                 }
                 else if(Over == 0){
-                
+                TwoFiveU[1]++;
+                TwoFiveU[2]++;
+                }
         }
 
 
