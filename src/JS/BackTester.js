@@ -64,6 +64,8 @@ async function BackTestSeason(){
                 }
         }
 
+        if
+
 
 
         console.log(PitcherOneFIP);
