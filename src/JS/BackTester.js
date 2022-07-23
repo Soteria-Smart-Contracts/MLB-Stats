@@ -323,6 +323,8 @@ async function BackTestSeason(){
     }
     console.log('TwoFiveUnder' + TwoFiveUnder);
     console.log('TwoSix' + TwoSix);
+        console.log('TwoSeven' + TwoSeven);
+        
 
 
 }
