@@ -108,60 +108,7 @@ async function BackTestSeason(){
                 }
         }
 
-        if(ValidData == true && AverageFIP > 3.099 && AverageFIP <= 3.199){
-                if(Over == 1){
-                ThreeZero[0]++;
-                ThreeZero[2]++;
-                }
-                else if(Over == 0){
-                ThreeZero[1]++;
-                ThreeZero[2]++;
-                }
-        }
-
-        if(ValidData == true && AverageFIP > 3.199 && AverageFIP <= 3.299){
-                if(Over == 1){
-                ThreeOne[0]++;
-                ThreeOne[2]++;
-                }
-                else if(Over == 0){
-                ThreeOne[1]++;
-                ThreeOne[2]++;
-                }
-        }
-
-        if(ValidData == true && AverageFIP > 3.299 && AverageFIP <= 3.399){
-                if(Over == 1){
-                ThreeTwo[0]++;
-                ThreeTwo[2]++;
-                }
-                else if(Over == 0){
-                ThreeTwo[1]++;
-                ThreeTwo[2]++;
-                }
-        }
-
-        if(ValidData == true && AverageFIP > 3.399 && AverageFIP <= 3.499){
-                if(Over == 1){
-                ThreeThree[0]++;
-                ThreeThree[2]++;
-                }
-                else if(Over == 0){
-                ThreeThree[1]++;
-                ThreeThree[2]++;
-                }
-        }
-
-        if(ValidData == true && AverageFIP > 3.499 && AverageFIP <= 3.599){
-                if(Over == 1){
-                ThreeFour[0]++;
-                ThreeFour[2]++;
-                }
-                else if(Over == 0){
-                ThreeFour[1]++;
-                ThreeFour[2]++;
-                }
-        }
+        
 
 
 
