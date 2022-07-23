@@ -51,7 +51,7 @@ async function BackTestSeason(){
         }
         let Over = json[i][i][3];
         let AverageFIP = (PitcherOneFIP + PitcherTwoFIP) / 2;
-
+        console.log('avgfip: ' + AverageFIP);
 
         if(ValidData == true && AverageFIP <= 2.599){
                 if(Over == 1){
