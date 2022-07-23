@@ -89,7 +89,13 @@ async function BackTestSeason(){
         if(ValidData == true && AverageFIP > 2.799 && AverageFIP <= 2.899){
                 if(Over == 1){
                 TwoEight[0]++;
-                
+                TwoEight[2]++;
+                }
+                else if(Over == 0){
+                TwoEight[1]++;
+                TwoEight[2]++;
+                }
+        }
 
 
 
