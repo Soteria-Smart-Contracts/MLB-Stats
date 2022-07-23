@@ -1,3 +1,5 @@
+let errors = 0;
+
 
 async function GetJson(){
     let request = await fetch("src/SeasonData2021.json");
