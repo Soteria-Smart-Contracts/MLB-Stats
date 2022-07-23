@@ -45,6 +45,7 @@ async function BackTestSeason(){
         PitcherTwoFIP = await GetPitcherFIPfromName(json[i][i][1]);
         if(PitcherOneFIP == 0 || PitcherOneFIP == 'NaN' || PitcherTwoFIP == 0 || PitcherTwoFIP == 'NaN'){
             ValidData = false;
+            errors++;
         }
         let Over = json[i][i][3];
         console.log(PitcherOneFIP);
