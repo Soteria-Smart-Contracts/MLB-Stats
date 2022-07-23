@@ -50,6 +50,7 @@ async function BackTestSeason(){
             errors++;
         }
         let Over = json[i][i][3];
+        let AverageFIP = (PitcherOneFIP + PitcherTwoFIP) / 2;
         
         console.log(PitcherOneFIP);
         console.log(PitcherTwoFIP);
