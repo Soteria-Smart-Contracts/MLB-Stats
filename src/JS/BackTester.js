@@ -113,7 +113,12 @@ async function BackTestSeason(){
                 ThreeZero[0]++;
                 ThreeZero[2]++;
                 }
-                
+                else if(Over == 0){
+                ThreeZero[1]++;
+                ThreeZero[2]++;
+                }
+        }
+        
 
 
 
