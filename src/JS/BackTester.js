@@ -258,7 +258,66 @@ async function BackTestSeason(){
                 FourFour[2]++;
                 }
         }
-        
+        if (ValidData == true && AverageFIP > 4.499 && AverageFIP <= 4.599){
+                if(Over == 1){
+                FourFive[0]++;
+                FourFive[2]++;
+                }
+                else if(Over == 0){
+                FourFive[1]++;
+                FourFive[2]++;
+                }
+        }
+        if (ValidData == true && AverageFIP > 4.599 && AverageFIP <= 4.699){
+                if(Over == 1){
+                FourSix[0]++;
+                FourSix[2]++;
+                }
+                else if(Over == 0){
+                FourSix[1]++;
+                FourSix[2]++;
+                }
+        }
+        if (ValidData == true && AverageFIP > 4.699 && AverageFIP <= 4.799){
+                if(Over == 1){
+                FourSeven[0]++;
+                FourSeven[2]++;
+                }
+                else if(Over == 0){
+                FourSeven[1]++;
+                FourSeven[2]++;
+                }
+        }
+        if (ValidData == true && AverageFIP > 4.799 && AverageFIP <= 4.899){
+                if(Over == 1){
+                FourEight[0]++;
+                FourEight[2]++;
+                }
+                else if(Over == 0){
+                FourEight[1]++;
+                FourEight[2]++;
+                }
+        }
+        if (ValidData == true && AverageFIP > 4.899 && AverageFIP <= 4.999){
+                if(Over == 1){
+                FourNine[0]++;
+                FourNine[2]++;
+                }
+                else if(Over == 0){
+                FourNine[1]++;
+                FourNine[2]++;
+                }
+        }
+        if (ValidData == true && AverageFIP > 4.999 && AverageFIP <= 5.099){
+                if(Over == 1){
+                FiveZero[0]++;
+                FiveZero[2]++;
+                }
+                else if(Over == 0){
+                FiveZero[1]++;
+                FiveZero[2]++;
+                }
+        }
         
 
 
