@@ -53,7 +53,8 @@ async function BackTestSeason(){
         let AverageFIP = (PitcherOneFIP + PitcherTwoFIP) / 2;
 
 
-        if(Over == 1 && ValidData == true && AverageFIP <= 2.599){
+        if(ValidData == true && AverageFIP <= 2.599){
+                
                 TwoFiveU[0]++;
                 TwoFiveU[2]++;
             }
