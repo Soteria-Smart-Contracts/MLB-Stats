@@ -4,7 +4,7 @@ let BoxesMLB;
 
 let HomeLineup = [];
 let AwayLineup = [];
-;
+
 
 async function GetLineups(){
     let Boxes = [];
