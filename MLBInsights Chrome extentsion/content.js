@@ -1,9 +1,9 @@
 //in class with only 1 element, use querySelector instead of querySelectorAll for player-header--vitals-name to get the player name
 //alert with the player name formatted
 
-    let playerName = document.querySelector('.player-header--vitals-name').textContent;
-    let PlayerInfo = GetPitcherInfo(playerName);
-    FormattedAlertWithInfo = `Player Name: ${PlayerInfo.Name}\nAge: ${PlayerInfo.Age}\nTeam: ${PlayerInfo.Team}\nRecord: ${PlayerInfo.Record}\nFIP: ${PlayerInfo.FIP}\nERA: ${PlayerInfo.ERA}\nHR/9IP: ${PlayerInfo["HR/9IP"]}\nIP: ${PlayerInfo.IP}\nHR: ${PlayerInfo.HR}`;
+let playerName = document.querySelector('.player-header--vitals-name').textContent;
+let PlayerInfo = await GetPitcherInfo(playerName);
+FormattedAlertWithInfo = `Player Name: ${PlayerInfo.Name}\nAge: ${PlayerInfo.Age}\nTeam: ${PlayerInfo.Team}\nRecord: ${PlayerInfo.Record}\nFIP: ${PlayerInfo.FIP}\nERA: ${PlayerInfo.ERA}\nHR/9IP: ${PlayerInfo["HR/9IP"]}\nIP: ${PlayerInfo.IP}\nHR: ${PlayerInfo.HR}`;
 alert(`Player Name: ${playerName}`);
 
 
