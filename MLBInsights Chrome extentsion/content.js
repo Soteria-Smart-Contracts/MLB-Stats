@@ -1,7 +1,6 @@
 //in class with only 1 element, use querySelector instead of querySelectorAll for player-header--vitals-name to get the player name
 //alert with the player name formatted
 
-Go();
 
 async function Go(){
     let playerName = document.querySelector('.player-header--vitals-name').textContent;
@@ -1002,3 +1001,5 @@ Hagen Danner,TOR,25,1,0,0,0,0.1,0,0,0,0,0,0,0,0,0,0,0,0,0.00000
 Anthony Misiewicz,DET,29,1,0,0,0,0.1,4,3,0,0,1,0,0,0,0,0,81,12,90.00000
 Robert Garcia,MIA,27,1,0,0,0,0.1,1,0,0,1,0,0,0,0,0,0,0,6,0.00000
     `;
+
+    Go();
