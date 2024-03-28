@@ -54,7 +54,7 @@ async function GetPitcherInfo(Name) {
     const losses = playerFields[14];
     const IP = parseFloat(playerFields[7]);
     const HR = parseInt(playerFields[12]);
-    const ERA = parseFloat(playerFields[16]);
+    const ERA = parseFloat(playerFields[18]);
     const HR_9IP = parseFloat(playerFields[20]);
     const FIP = await GetPitcherFIP(Name); // Assuming GetPitcherFIP is an async function
 
