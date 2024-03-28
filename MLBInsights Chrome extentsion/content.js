@@ -2,7 +2,7 @@
 //alert with the player name formatted
 let PlayerInfoFormattedForAlert = async function() {
     let playerName = document.querySelector('.player-header--vitals-name').textContent;
-    get
+    ge
     alert(`Player Name: ${playerName}`);
 }
 
