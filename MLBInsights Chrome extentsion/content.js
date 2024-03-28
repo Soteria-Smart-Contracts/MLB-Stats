@@ -2,11 +2,8 @@
 //alert with the player name formatted
 let Go = async function() {
     let playerName = document.querySelector('.player-header--vitals-name').textContent;
-    GetPitcherInfo(playerName);
-    let age = 
+    let PlayerInfo = GetPitcherInfo(playerName);
     FormattedAlertWithInfo = 
-    `Player Name: ${playerName}
-    Age : `;
     alert(`Player Name: ${playerName}`);
 }
 
