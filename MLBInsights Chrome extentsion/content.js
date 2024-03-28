@@ -79,8 +79,7 @@ async function GetPitcherInfo(Name) {
     };
 
     // Display player info in a formatted table
-    console.log('%cPlayer Info', 'color: #ff6600; font-size: 18px;');
-    console.table(playerInfo);
+    return playerInfo;
 }
 
 
