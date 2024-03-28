@@ -31,7 +31,8 @@ async function calculateFIP(playerName) {
     return FIP.toFixed(2); // Return FIP rounded to 2 decimal places
 }
 
-//
+//make a functiont hat returns a cool coloured screen in the console showint the following pitcher info:
+//Name, 
 
 // Example usage:
 const csvData = `
