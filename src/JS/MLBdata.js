@@ -57,7 +57,7 @@ async function GetPitcherInfo(Name) {
     const HR = parseInt(playerFields[12]);
     const ERA = parseFloat(playerFields[16]);
     const HR_9IP = parseFloat(playerFields[20]);
-    const FIP = GetPitcherFIP(name);
+    const FIP = GetPitcherFIP(Name);
     // Display player info in a colored console screen
     console.log(`%cPlayer Info`, `color: #ff6600; font-size: 18px;`);
     console.log(`Name: ${Name}`);
