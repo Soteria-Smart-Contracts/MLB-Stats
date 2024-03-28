@@ -21,7 +21,7 @@ async function calculateFIP(playerName) {
     const BB = parseInt(playerFields[10]); // Walks allowed
     const HBP = 0; // Assuming Hit by Pitch is not provided in the data
     const K = parseInt(playerFields[9]);  // Strikeouts
-    const IP = parseFloat(playerFields[6]); // Innings Pitched
+    const IP = parseFloat(playerFields[8]); // Innings Pitched
     console.log(HR, BB, HBP, K, IP);
     
     // Calculate FIP using the formula: FIP = ((13*HR)+(3*(BB+HBP))-(2*K))/IP + FIP_constant
