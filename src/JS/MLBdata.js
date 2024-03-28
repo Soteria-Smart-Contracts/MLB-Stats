@@ -42,7 +42,6 @@ async function GetPitcherFIPfromName(FullName){
 function calculateFIP(playerName) {
     // Split the CSV data by lines to get individual player records
     const playerRecords = csvData.split('\n');
-    console.log(playerRecords);
     
     // Find the player's record by searching for their name
     const playerRecord = playerRecords.find(record => record.includes(playerName));
