@@ -58,11 +58,6 @@ async function GetPitcherInfo() {
     const HR = parseInt(playerFields[12]);
     const ERA = parseFloat(playerFields[16]);
     const HR_9IP = parseFloat(playerFields[20]);
-    
-    // Calculate FIP using the formula: FIP = ((13*HR)+(3*(BB+HBP))-(2*K))/IP + FIP_constant
-    const BB = parseInt(playerFields[11]); // Walks allowed
-    const HBP = 0; // Assuming Hit by Pitch is not provided in the data
-    const K = parseInt(playerFields[10]);  // Strikeouts
     const FIP = GetPitcherFIP(name);
     // Display player info in a colored console screen
     console.log(`%cPlayer Info`, `color: #ff6600; font-size: 18px;`);
