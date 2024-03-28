@@ -34,7 +34,7 @@ async function GetPitcherFIP(playerName) {
 //make a functiont hat returns a cool coloured screen in the console showint the following pitcher info:
 //Name, Age, Team,record, FIP, ERA, HR/9IP,IP, HR
 
-async function GetPitcherInfo() {
+async function GetPitcherInfo(Name) {
     // Split the CSV data by lines to get individual player records
     const playerRecords = csvData.split('\n');
     
@@ -49,7 +49,6 @@ async function GetPitcherInfo() {
     const playerFields = playerRecord.split(',');
     
     // Extract relevant statistics
-    const name = playerFields[0];
     const age = playerFields[2];
     const team = playerFields[1];
     const wins = playerFields[13];
