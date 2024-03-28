@@ -70,7 +70,7 @@ function calculateFIP(playerName) {
     return FIP.toFixed(2); // Return FIP rounded to 2 decimal places
 }
 
-async function calculateFIP(playerData) {
+async function calculateFIP(Name) {
     const HR = playerData[12];
     const BB = playerData[9];
     const HBP = 0; // Assuming hit by pitch data is not provided in the CSV
