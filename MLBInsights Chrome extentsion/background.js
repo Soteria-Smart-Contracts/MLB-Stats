@@ -2,7 +2,7 @@
 //check if the url has https://www.mlb.com/player/ 
 // Listen for tab change events
 chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
-    //get the url of the current tab
+    //get the url of the current tab, check if it contains 'https://www.mlb.com/player/' using indexOf
     const url = tab.url;
     if (url.contains('https://www.mlb.com/player/')) {
         // Send a message to the active tab
