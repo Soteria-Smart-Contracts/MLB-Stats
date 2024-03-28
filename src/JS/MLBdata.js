@@ -18,7 +18,7 @@ async function calculateFIP(playerName) {
     
     // Extract relevant statistics
     const HR = parseInt(playerFields[12]); // Home Runs allowed
-    const BB = parseInt(playerFields[10]); // Walks allowed
+    const BB = parseInt(playerFields[11]); // Walks allowed
     const HBP = 0; // Assuming Hit by Pitch is not provided in the data
     const K = parseInt(playerFields[9]);  // Strikeouts
     const IP = parseFloat(playerFields[8]); // Innings Pitched
