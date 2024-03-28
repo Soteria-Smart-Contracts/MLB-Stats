@@ -64,7 +64,7 @@ async function GetPitcherInfo(Name) {
     console.log(`Age: ${age}`);
     console.log(`Team: ${team}`);
     console.log(`Record: ${wins}-${losses}`);
-    console.log(`FIP: ${FIP.toFixed(2)}`);
+    console.log(`FIP: ${FIP}`);
     console.log(`ERA: ${ERA}`);
     console.log(`HR/9IP: ${HR_9IP}`);
     console.log(`IP: ${IP}`);
