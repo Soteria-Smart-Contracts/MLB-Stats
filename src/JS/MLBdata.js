@@ -63,7 +63,7 @@ async function GetPitcherInfo() {
     const BB = parseInt(playerFields[11]); // Walks allowed
     const HBP = 0; // Assuming Hit by Pitch is not provided in the data
     const K = parseInt(playerFields[10]);  // Strikeouts
-    const FIP = Get
+    const FIP = GetPitcherFIP(name);
     // Display player info in a colored console screen
     console.log(`%cPlayer Info`, `color: #ff6600; font-size: 18px;`);
     console.log(`Name: ${name}`);
