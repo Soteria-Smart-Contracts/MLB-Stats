@@ -22,7 +22,7 @@ async function calculateFIP(playerName) {
     const HBP = 0; // Assuming Hit by Pitch is not provided in the data
     const K = parseInt(playerFields[9]);  // Strikeouts
     const IP = parseFloat(playerFields[6]); // Innings Pitched
-    console.log(HR, BB, HBP, K, IP); // add tex
+    console.log(HR, BB, HBP, K, IP); // add names to e
     
     // Calculate FIP using the formula: FIP = ((13*HR)+(3*(BB+HBP))-(2*K))/IP + FIP_constant
     const FIP_constant = 3.1; // Typical league-average constant for FIP
