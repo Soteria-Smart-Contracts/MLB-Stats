@@ -1,8 +1,8 @@
 // background.js
+alert('Background script loaded!');
 
 // Listen for tab change events
 chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
-    alert('Tab updated!');
 
   });
   
