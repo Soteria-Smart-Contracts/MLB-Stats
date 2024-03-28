@@ -45,7 +45,7 @@ Player2,Team2,28,22,22,4,2,150,120,50,140,35,12,6,2,0,0,0,3.00,1.25
 Player3,Team3,30,25,25,2,0,160,130,60,150,40,15,8,3,0,0,0,3.50,1.30`;
 
 // Function to calculate FIP
-function calculateFIP(playerName, csvData) {
+function calculateFIP(playerName) {
     // Split CSV data by lines
     const lines = csvData.split('\n');
     
