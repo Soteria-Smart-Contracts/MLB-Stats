@@ -3,9 +3,8 @@
 let Go = async function() {
     let playerName = document.querySelector('.player-header--vitals-name').textContent;
     GetPitcherInfo(playerName);
-    FormattedAlertWithInfo = 
-        "Player Name: ${playerName
-        ""
+    FormattedAlertWithInfo = `Player Name: ${playerName}
+    e`;
     alert(`Player Name: ${playerName}`);
 }
 
