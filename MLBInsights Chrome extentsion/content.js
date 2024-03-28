@@ -7,9 +7,6 @@ FormattedAlertWithInfo = `Player Name: ${PlayerInfo.Name}\nAge: ${PlayerInfo.Age
 alert(FormattedAlertWithInfo);
 
 
-
-
-
 async function GetPitcherFIP(playerName) {
     // Split the CSV data by lines to get individual player records
     const playerRecords = csvData.split('\n');
