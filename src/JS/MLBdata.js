@@ -28,7 +28,7 @@ async function GetPitcherFIP(playerName) {
     const FIP_constant = 3.1; // Typical league-average constant for FIP
     const FIP = ((13 * HR) + (3 * (BB + HBP)) - (2 * K)) / IP + FIP_constant;
     
-    return FIP.toFixed(2); // Return FIP rounded to 2 decimal places
+    return await (FIP.toFixed(2)); // Return FIP rounded to 2 decimal places
 }
 
 //make a functiont hat returns a cool coloured screen in the console showint the following pitcher info:
