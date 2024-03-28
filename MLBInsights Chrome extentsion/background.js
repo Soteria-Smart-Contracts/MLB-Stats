@@ -1,13 +1,13 @@
 // background.js
-let xanax
+let xanax;
 // Listen for tab change events
 chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
-    let xanax = 'xanax';
+    let xanax = '12';
 
   });
   
   // Listen for the extension icon click event
   chrome.action.onClicked.addListener((tab) => {
-    let xanax = 'xanax';
+    xanax = '13';
   });
   
