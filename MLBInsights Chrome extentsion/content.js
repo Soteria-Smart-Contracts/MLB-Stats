@@ -5,7 +5,7 @@ Go();
 
 async function Go(){
     let playerName = document.querySelector('.player-header--vitals-name').textContent;
-    let PlayerInfo = GetPitcherInfo(playerName);
+    let PlayerInfo = await GetPitcherInfo(playerName);
     FormattedAlertWithInfo = `Player Name: ${PlayerInfo.Name}\nAge: ${PlayerInfo.Age}\nTeam: ${PlayerInfo.Team}\nRecord: ${PlayerInfo.Record}\nFIP: ${PlayerInfo.FIP}\nERA: ${PlayerInfo.ERA}\nHR/9IP: ${PlayerInfo["HR/9IP"]}\nIP: ${PlayerInfo.IP}\nHR: ${PlayerInfo.HR}`;
     alert(FormattedAlertWithInfo);
 }
