@@ -32,7 +32,7 @@ async function calculateFIP(playerName) {
 }
 
 //make a functiont hat returns a cool coloured screen in the console showint the following pitcher info:
-//Name, Age, Team, FIP, ERA, HR/9IP,IP and 
+//Name, Age, Team, FIP, ERA, HR/9IP,IP, HR
 
 // Example usage:
 const csvData = `
