@@ -1002,4 +1002,6 @@ Anthony Misiewicz,DET,29,1,0,0,0,0.1,4,3,0,0,1,0,0,0,0,0,81,12,90.00000
 Robert Garcia,MIA,27,1,0,0,0,0.1,1,0,0,1,0,0,0,0,0,0,0,6,0.00000
     `;
 
+    //wait for the page to load then go
+
 Go();
