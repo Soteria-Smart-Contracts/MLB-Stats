@@ -39,7 +39,7 @@ async function GetPitcherInfo(Name) {
     const playerRecords = csvData.split('\n');
     
     // Find the player's record by searching for their name
-    const playerRecord = playerRecords.find(record => record.includes(playerName));
+    const playerRecord = playerRecords.find(record => record.includes(Name));
 
     if (!playerRecord) {
         return "Player not found";
@@ -60,7 +60,7 @@ async function GetPitcherInfo(Name) {
     const FIP = GetPitcherFIP(name);
     // Display player info in a colored console screen
     console.log(`%cPlayer Info`, `color: #ff6600; font-size: 18px;`);
-    console.log(`Name: ${name}`);
+    console.log(`Name: ${Name}`);
     console.log(`Age: ${age}`);
     console.log(`Team: ${team}`);
     console.log(`Record: ${wins}-${losses}`);
