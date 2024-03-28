@@ -38,6 +38,7 @@ function removeaccents(str) {
 //make a functiont hat returns a cool coloured screen in the console showint the following pitcher info:
 //Name, Age, Team,record, FIP, ERA, HR/9IP,IP, HR
 async function GetPitcherInfo(Name) {
+    Name = removeaccents(Name);
     // Split the CSV data by lines to get individual player records
     const playerRecords = csvData.split('\n');
     
