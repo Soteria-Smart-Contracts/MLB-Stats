@@ -5,7 +5,7 @@ let Go = async function() {
     GetPitcherInfo(playerName);
     FormattedAlertWithInfo = 
     `Player Name: ${playerName}
-    e`;
+    Age : `;
     alert(`Player Name: ${playerName}`);
 }
 
