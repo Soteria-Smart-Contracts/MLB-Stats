@@ -70,24 +70,40 @@ function calculateFIP(playerName) {
     return FIP.toFixed(2); // Return FIP rounded to 2 decimal places
 }
 
-async function calculateFIP(Name) {
-    const HR = playerData[12];
-    const BB = playerData[9];
-    const HBP = 0; // Assuming hit by pitch data is not provided in the CSV
-    const K = playerData[8];
-    const IP = playerData[6];
-
-    // FIP constant (use an average value)
-    const FIP_constant = 3.10;
-
-    // Calculate FIP
+function calculateFIP(playerName, playerData) {
+    // Split the CSV data by lines to get individual player records
+    const playerRecords = playerData.split('\n');
+    
+    // Find the player's record by searching for their name
+    const playerRecord = playerRecords.find(record => record.includes(playerName));
+    
+    if (!playerRecord) {
+        return "Player not found";
+    }
+    
+    // Split the player's record by commas to extract relevant data
+    const playerFields = playerRecord.split(',');
+    
+    // Extract relevant statistics
+    const HR = parseInt(playerFields[12]); // Home Runs allowed
+    const BB = parseInt(playerFields[10]); // Walks allowed
+    const HBP = 0; // Assuming Hit by Pitch is not provided in the data
+    const K = parseInt(playerFields[9]);  // Strikeouts
+    const IP = parseFloat(playerFields[6]); // Innings Pitched
+    
+    // Calculate FIP using the formula: FIP = ((13*HR)+(3*(BB+HBP))-(2*K))/IP + FIP_constant
+    const FIP_constant = 3.1; // Typical league-average constant for FIP
     const FIP = ((13 * HR) + (3 * (BB + HBP)) - (2 * K)) / IP + FIP_constant;
     
     return FIP.toFixed(2); // Return FIP rounded to 2 decimal places
 }
 
 // Example usage:
-const playerData = [/* Player data from CSV row */];
+const csvData = `
+Player,Team,Age,G,Gs,CG,SHO,IP,H,ER,K,BB,HR,W,L,SV,BS,HLD,ERA,WHIP,HR/9IP
+Max Scherzer,Washington Nationals,37,30,30,2,1,179.1,128,55,239,41,21,4,15,0,0,0,2.76,1.02,0.72
+Jacob deGrom,New York Mets,33,25,25,0,0,151.0,94,35,221,33,7,8,5,0,0,0,2.08,0.87,0.56
+`;
 
 
 
