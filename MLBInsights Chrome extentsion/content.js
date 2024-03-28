@@ -1,5 +1,13 @@
+//in class with only 1 element, use querySelector instead of querySelectorAll for player-header--vitals-name to get the player name
+//alert with the player name
+alert(document.querySelector('.player-header--vitals-name').innerText);
 
-//alert with formatted pla
+
+
+
+
+
+
 
 
 
@@ -79,7 +87,8 @@ async function GetPitcherInfo(Name) {
     };
 
     // Display player info in a formatted table
-    return playerInfo;
+    console.log('%cPlayer Info', 'color: #ff6600; font-size: 18px;');
+    console.table(playerInfo);
 }
 
 
