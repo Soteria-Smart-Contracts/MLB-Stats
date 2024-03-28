@@ -33,7 +33,6 @@ async function GetPitcherFIP(playerName) {
 
 //make a functiont hat returns a cool coloured screen in the console showint the following pitcher info:
 //Name, Age, Team,record, FIP, ERA, HR/9IP,IP, HR
-
 async function GetPitcherInfo(Name) {
     // Split the CSV data by lines to get individual player records
     const playerRecords = csvData.split('\n');
@@ -57,19 +56,26 @@ async function GetPitcherInfo(Name) {
     const HR = parseInt(playerFields[12]);
     const ERA = parseFloat(playerFields[16]);
     const HR_9IP = parseFloat(playerFields[20]);
-    const FIP = GetPitcherFIP(Name);
-    // Display player info in a colored console screen
-    console.log(`%cPlayer Info`, `color: #ff6600; font-size: 18px;`);
-    console.log(`Name: ${Name}`);
-    console.log(`Age: ${age}`);
-    console.log(`Team: ${team}`);
-    console.log(`Record: ${wins}-${losses}`);
-    console.log(`FIP: ${FIP}`);
-    console.log(`ERA: ${ERA}`);
-    console.log(`HR/9IP: ${HR_9IP}`);
-    console.log(`IP: ${IP}`);
-    console.log(`HR: ${HR}`);
+    const FIP = await GetPitcherFIP(Name); // Assuming GetPitcherFIP is an async function
+
+    // Construct an object with the player's information
+    const playerInfo = {
+        Name: Name,
+        Age: age,
+        Team: team,
+        Record: `${wins}-${losses}`,
+        FIP: FIP,
+        ERA: ERA,
+        "HR/9IP": HR_9IP,
+        IP: IP,
+        HR: HR
+    };
+
+    // Display player info in a formatted table
+    console.log('%cPlayer Info', 'color: #ff6600; font-size: 18px;');
+    console.table(playerInfo);
 }
+
 
 // Example usage:
 const csvData = `
