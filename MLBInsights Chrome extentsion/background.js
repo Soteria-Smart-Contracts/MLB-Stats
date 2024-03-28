@@ -1,8 +1,8 @@
 // background.js
-alert('Background script loaded!');
-
+let xanax
 // Listen for tab change events
 chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
+    let xanax = 'xanax';
 
   });
   
