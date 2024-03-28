@@ -1,7 +1,7 @@
 
 
 
-async function calculateFIP(playerName) {
+async function GetPitcherFIP(playerName) {
     // Split the CSV data by lines to get individual player records
     const playerRecords = csvData.split('\n');
     
