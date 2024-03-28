@@ -23,7 +23,7 @@ async function GetPitcherFIP(playerName) {
     if (!playerRecord) {
         return "Player not found";
     }
-    
+
     // Split the player's record by commas to extract relevant data
     const playerFields = playerRecord.split(',');
     
