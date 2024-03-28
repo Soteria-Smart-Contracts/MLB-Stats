@@ -1,7 +1,7 @@
 // content.js
 
 // Listen for changes in the URL
-chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
+chrome.runtime.onMessage.addListener((message) => {
     if (message.action === 'logPlayerName') {
       const playerNameElement = document.querySelector('.player-header__title h1');
       if (playerNameElement) {
