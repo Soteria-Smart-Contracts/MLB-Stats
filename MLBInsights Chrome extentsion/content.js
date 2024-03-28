@@ -7,6 +7,7 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
       if (playerNameElement) {
         const playerName = playerNameElement.textContent.trim();
         console.log('Player Name:', playerName);
+        alert('Player Name:', playerName);
       }
     }
   });
