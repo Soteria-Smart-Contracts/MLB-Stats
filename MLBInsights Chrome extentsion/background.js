@@ -4,7 +4,7 @@
 chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
     //get the url of the current tab, check if it contains 'https://www.mlb.com/player/' using indexOf
     const url = tab.url;
-    if (url.contains('https://www.mlb.com/player/')) {
+    if (url) {
         // Send a message to the active tab
         chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
             chrome.tabs.sendMessage(tabs[0].id, { action: 'logPlayerName' });
