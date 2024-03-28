@@ -9,4 +9,5 @@ chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
             chrome.tabs.sendMessage(tabs[0].id, { action: 'logPlayerName' });
         });
     }
-}
+    }
+);
