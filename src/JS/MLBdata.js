@@ -938,22 +938,3 @@ Hagen Danner,TOR,25,1,0,0,0,0.1,0,0,0,0,0,0,0,0,0,0,0,0,0.00000
 Anthony Misiewicz,DET,29,1,0,0,0,0.1,4,3,0,0,1,0,0,0,0,0,81,12,90.00000
 Robert Garcia,MIA,27,1,0,0,0,0.1,1,0,0,1,0,0,0,0,0,0,0,6,0.00000
     `;
-
-
-
-//BaseLevel Functions
-
-async function GetPlayerID(FullName){
-    let StatRequest = await fetch(`${APIprefix}/json/named.search_player_all.bam?sport_code='mlb'&active_sw='Y'&name_part='${FullName}'`)
-    let PlayerInfo = await StatRequest.json();
-
-    try { PlayerID = await PlayerInfo.search_player_all.queryResults.row.player_id;
-    } catch(err){
-        console.log(err);
-        PlayerID = 000000;
-    }
-
-    return PlayerID;
-}
-
-
