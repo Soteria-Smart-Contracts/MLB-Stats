@@ -35,7 +35,7 @@ async function GetPitcherFIP(playerName) {
 //Name, Age, Team,record, FIP, ERA, HR/9IP,IP, HR
 async function GetPitcherInfo(Name) {
     //remove any accents from the name
-    Name = removeAccents(Name);
+    
     // Split the CSV data by lines to get individual player records
     const playerRecords = csvData.split('\n');
     
