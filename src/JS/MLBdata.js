@@ -34,7 +34,50 @@ async function calculateFIP(playerName) {
 //make a functiont hat returns a cool coloured screen in the console showint the following pitcher info:
 //Name, Age, Team,record, FIP, ERA, HR/9IP,IP, HR
 
-async function displayPitcherInfo(playerName) 
+async function Di(playerName, csvData) {
+    // Split the CSV data by lines to get individual player records
+    const playerRecords = csvData.split('\n');
+    
+    // Find the player's record by searching for their name
+    const playerRecord = playerRecords.find(record => record.includes(playerName));
+
+    if (!playerRecord) {
+        return "Player not found";
+    }
+    
+    // Split the player's record by commas to extract relevant data
+    const playerFields = playerRecord.split(',');
+    
+    // Extract relevant statistics
+    const name = playerFields[0];
+    const age = playerFields[2];
+    const team = playerFields[1];
+    const wins = playerFields[13];
+    const losses = playerFields[14];
+    const IP = parseFloat(playerFields[7]);
+    const HR = parseInt(playerFields[12]);
+    const ERA = parseFloat(playerFields[16]);
+    const HR_9IP = parseFloat(playerFields[20]);
+    
+    // Calculate FIP using the formula: FIP = ((13*HR)+(3*(BB+HBP))-(2*K))/IP + FIP_constant
+    const BB = parseInt(playerFields[11]); // Walks allowed
+    const HBP = 0; // Assuming Hit by Pitch is not provided in the data
+    const K = parseInt(playerFields[10]);  // Strikeouts
+    const FIP_constant = 3.1; // Typical league-average constant for FIP
+    const FIP = ((13 * HR) + (3 * (BB + HBP)) - (2 * K)) / IP + FIP_constant;
+    
+    // Display player info in a colored console screen
+    console.log(`%cPlayer Info`, `color: #ff6600; font-size: 18px;`);
+    console.log(`Name: ${name}`);
+    console.log(`Age: ${age}`);
+    console.log(`Team: ${team}`);
+    console.log(`Record: ${wins}-${losses}`);
+    console.log(`FIP: ${FIP.toFixed(2)}`);
+    console.log(`ERA: ${ERA}`);
+    console.log(`HR/9IP: ${HR_9IP}`);
+    console.log(`IP: ${IP}`);
+    console.log(`HR: ${HR}`);
+}
 
 // Example usage:
 const csvData = `
