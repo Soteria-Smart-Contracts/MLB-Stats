@@ -2601,7 +2601,7 @@ if(window.location.href.indexOf("preview") > -1) {
         let team1 = teamcodes[window.location.href.split("/")[4].split("-")[0]];
         let team2;
         //if team 1 is red or white, get the second team name from the 3
-        if(team1 == "BOS" || team1 == "CHA") {
+        if(team1 == "BOS" || team1 == "CHA" || team1 = "TOR") {
             team2 = teamcodes[window.location.href.split("/")[4].split("-")[3]];
         }
         else{
