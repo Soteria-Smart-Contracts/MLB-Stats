@@ -60,21 +60,6 @@ async function analyzeHomeRuns(teamToIndex) {
       console.log(`Games under 2.5 Home Runs:${unhr}`);
       console.log(`Percentage of games over 2.5HR: ${ovpercent}%`);
       console.log(`Percentage of games under 2.5HR: ${unpercent}%`);
-  
-    return {
-      teamFound,
-      gamesFound,
-      totalHR,
-      totalHRF,
-      totalHRA,
-      averageHR,
-      averageHRF,
-      averageHRA,
-      ovhr,
-      unhr,
-      ovpercent,
-      unpercent,
-    };
 }
 
 analyzeHomeRuns("NYN")
