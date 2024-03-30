@@ -158,7 +158,7 @@ const teamcodes = {
     "cardinals": "SLN",
     "rays": "TBA",
     "rangers": "TEX",
-    "jays": "TOR",
+    "bluejays": "TOR",
     "nationals": "WAS"
 };
 
