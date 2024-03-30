@@ -147,9 +147,9 @@ async function analyzeHeadToHeadHomeRuns(team1, team2) {
 }
 
 const teamcodes = {
-    "Arizona Diamondbacks": "ARI",
-    "Atlanta Braves": "ATL",
-    "Baltimore Orioles": "BAL",
+    "Diamondbacks": "ARI",
+    "Braves": "ATL",
+    "Orioles": "BAL",
     "Boston Red Sox": "BOS",
     "Chicago Cubs": "CHN",
     "Chicago White Sox": "CHA",
