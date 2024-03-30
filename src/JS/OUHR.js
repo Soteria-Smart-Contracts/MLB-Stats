@@ -17,9 +17,9 @@ async function analyzeHomeRuns(teamToIndex) {
         totalHR += game[8]; // Assuming home runs are at index 8
         if (game[3] === teamToIndex) {
           totalHRF += game[6]; // Assuming home runs for at index 5
-          totalHRA += game[]; // Assuming home runs against at index 6
+          totalHRA += game[7]; // Assuming home runs against at index 6
         } else {
-          totalHRF += game[6];
+          totalHRF += game[];
           totalHRA += game[5];
         }
         if (game[9] > 1.5) {
