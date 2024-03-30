@@ -2604,6 +2604,7 @@ let data = `Date,Game Type,,Away,,Home,HR Away,HR Home,,HR Total,,
 
 if(window.location.href.indexOf("preview") > -1) {
     //get the 3 letter team codes for each team using the url and matching its contents to the teamcodes object (example link: https://www.mlb.com/gameday/brewers-vs-mets/2024/03/30/745850/preview)
+    
     let team1 = teamcodes[window.location.href.split("/")[4].split("-")[0]];
     let team2 = teamcodes[window.location.href.split("/")[4].split("-")[2]];
     analyzeHeadToHeadHomeRuns(team1, team2);
