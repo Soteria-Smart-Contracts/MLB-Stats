@@ -206,7 +206,7 @@ const teamcodes = {
     "Atlanta Braves": "ATL",
     "Baltimore Orioles": "BAL",
     "Boston Red Sox": "BOS",
-    "Chicago Cubs": "CHC",
+    "Chicago Cubs": "CHN",
     "Chicago White Sox": "CHW",
     "Cincinnati Reds": "CIN",
     "Cleveland Guardians": "CLE",
