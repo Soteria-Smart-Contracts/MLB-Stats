@@ -2599,12 +2599,13 @@ if(window.location.href.indexOf("preview") > -1) {
     //wait 3 seconds for the page to load
     window.addEventListener('load', function () {
         let team1 = teamcodes[window.location.href.split("/")[4].split("-")[0]];
+        let team2;
         //if team 1 is red or white, get the second team name from the 3
         if(team1 == "red" || team1 == "white") {
             team2 = teamcodes[window.location.href.split("/")[4].split("-")[3]];
         }
         else{
-            team2 = teamcodes[window.location.href.split("/")[4].split("-")[1]];
+            team2 = teamcodes[window.location.href.split("/")[4].split("-")[2]];
         }
         analyzeHeadToHeadHomeRuns(team1, team2);
       });
