@@ -14,7 +14,7 @@ async function analyzeHomeRuns(teamToIndex) {
     for (const game of data) {
       if (game[3] === teamToIndex || game[5] === teamToIndex) {
         console.log(game);
-        totalHR += game[9]; 
+        totalHR += Number(game[9]); 
         if (game[3] === teamToIndex) {
           totalHRF += Number(game[6]); // Assuming home runs for at index 5
           totalHRA += Number(game[7]); // Assuming home runs against at index 6
@@ -22,7 +22,7 @@ async function analyzeHomeRuns(teamToIndex) {
           totalHRF += Number(game[7]);
           totalHRA += Number(game[6]);
         }
-        if (game[9] > 1.5) {
+        if (Number(game[9]) > 1.5) {
           ovhr++;
         } else {
           unhr++;
