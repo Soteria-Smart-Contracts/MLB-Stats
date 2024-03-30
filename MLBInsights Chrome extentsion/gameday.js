@@ -103,7 +103,7 @@ async function analyzeHeadToHeadHomeRuns(team1, team2) {
     console.log(`Implied Odds for Under 2.5 HR: ${decimalOddsUnder}x`);
     console.log(`Implied Odds for Under 1.5 HR: ${decimalOdds1p5Under}x`);
 
-    alert("------------------------------" +
+    alert(
         "\nHead-to-Head Home Run Information" +
         "\n------------------------------" +
         "\nTotal Games Played: " + gamesFound +
@@ -122,11 +122,11 @@ async function analyzeHeadToHeadHomeRuns(team1, team2) {
         "\nPercentage of games under 2.5 HR: " + unpercent + "%" +
         "\nImplied Odds for Over 2.5 HR: " + decimalOdds + "x" +
         "\nImplied Odds for Under 2.5 HR: " + decimalOddsUnder + "x" +
-        "\nImplied Odds for Over 1.5 HR: " + decimalOdds1p5 + "x" +
         "\nGames over 1.5 Home Runs: " + ov1p5 +
         "\nGames under 1.5 Home Runs: " + un1p5 +
         "\nPercentage of games over 1.5 HR: " + ov1p5percent + "%" +
         "\nPercentage of games under 1.5 HR: " + un1p5percent + "%" +
+        "\nImplied Odds for Over 1.5 HR: " + decimalOdds1p5 + "x" +
         "\nImplied Odds for Under 1.5 HR: " + decimalOdds1p5Under + "x");
 
 }
