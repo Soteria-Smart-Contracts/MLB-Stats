@@ -4,4 +4,6 @@ if(window.location.href.indexOf("preview") > -1) {
     alert("You are on the preview page");
 }
 
-
+async function Go(){
+    //get the 
+}
