@@ -64,14 +64,6 @@ async function analyzeHomeRuns(teamToIndex) {
       console.log(`Percentage of games under 2.5HR: ${unpercent}%`);
 }
 
-Here's the updated code with a new analyzeHeadToHeadHomeRuns function:
-
-JavaScript
-let is_split = false;
-
-async function analyzeHomeRuns(teamToIndex) {
-    // ... (existing code for single team analysis)
-}
 
 // New function for head-to-head analysis
 async function analyzeHeadToHeadHomeRuns(team1, team2) {
