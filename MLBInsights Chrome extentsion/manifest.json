@@ -22,7 +22,10 @@
       {
         "matches": ["https://www.mlb.com/player/*"],
         "js": ["content.js"]
-      }
+      },
+      {
+        "matches": ["https://www.mlb.com/player/*"],
+        "js": ["content.js"]}
     ]
   }
   
