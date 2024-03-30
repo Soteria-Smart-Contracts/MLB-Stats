@@ -1,38 +1,104 @@
-let csvData = `Year,Team,Game,Opponent,Home,Away,Runs_For,Runs_Against,Win,Loss,Home_Runs
-2021,TeamA,1,TeamB,Away,Home,5,3,1,0,2
-2021,TeamA,2,TeamC,Away,Home,4,6,0,1,1
-2021,TeamA,3,TeamD,Home,Away,3,7,0,1,0
-2021,TeamA,4,TeamE,Away,Home,6,2,1,0,3
-2021,TeamA,5,TeamF,Home,Away,7,4,1,0,1
-2021,TeamA,6,TeamG,Away,Home,2,1,1,0,0
-2021,TeamA,7,TeamH,Home,Away,8,5,1,0,2
-2021,TeamB,1,TeamA,Home,Away,3,5,0,1,1
-2021,TeamB,2,TeamC,Home,Away,6,7,0,1,3
-2021,TeamB,3,TeamD,Away,Home,2,6,0,1,0
-2021,TeamB,4,TeamE,Home,Away,4,3,1,0,1
-2021,TeamB,5,TeamF,Away,Home,5,4,1,0,2
-2021,TeamB,6,TeamG,Home,Away,7,1,1,0,3
-2021,TeamB,7,TeamH,Away,Home,4,8,0,1,1`;
-
-function calculateHeadToHead(team1, team2) {
-    let team1Stats = {
-        gamesPlayed: 0,
-        totalRunsFor: 0,
-        totalRunsAgainst: 0,
-        totalHomeRuns: 0,
-        overTwoPointFive: 0,
-        underTwoPointFive: 0
+async function analyzeHomeRuns(data, teamToIndex) {
+    let teamFound = false;
+    let gamesFound = 0;
+    let totalHR = 0;
+    let totalHRF = 0;
+    let totalHRA = 0;
+    let ovhr = 0;
+    let unhr = 0;
+  
+    // Loop through each game in the data
+    for (const game of data) {
+      if (game[0] === teamToIndex || game[2] === teamToIndex) {
+        totalHR += game[8]; // Assuming home runs are at index 8
+        if (game[0] === teamToIndex) {
+          totalHRF += game[5]; // Assuming home runs for at index 5
+          totalHRA += game[6]; // Assuming home runs against at index 6
+        } else {
+          totalHRF += game[6];
+          totalHRA += game[5];
+        }
+        if (game[8] > 1.5) {
+          ovhr++;
+        } else {
+          unhr++;
+        }
+        teamFound = true;
+        gamesFound++;
+      }
+    }
+  
+    // Calculate averages and percentages
+    const averageHR = (totalHR / gamesFound).toFixed(4);
+    const averageHRF = (totalHRF / gamesFound).toFixed(4);
+    const averageHRA = (totalHRA / gamesFound).toFixed(4);
+    const ovpercent = ((ovhr / gamesFound) * 100).toFixed(2);
+    const unpercent = ((unhr / gamesFound) * 100).toFixed(2);
+  
+    return {
+      teamFound,
+      gamesFound,
+      totalHR,
+      totalHRF,
+      totalHRA,
+      averageHR,
+      averageHRF,
+      averageHRA,
+      ovhr,
+      unhr,
+      ovpercent,
+      unpercent,
     };
-
-    let team2Stats = {
-        gamesPlayed: 0,
-        totalRunsFor: 0,
-        totalRunsAgainst: 0,
-        totalHomeRuns: 0,
-        overTwoPointFive: 0,
-        underTwoPointFive: 0
-    };
-
-    const rows = csvData.split('\n');
-    for (const row of rows) {
-        const [year, team, game, opponent, home
+  }
+  
+  // Example usage: (replace 'data' with your actual data)
+  const data = [
+    // ... game data arrays
+  ];
+  
+  analyzeHomeRuns(data, TeamToIndex)
+    .then((results) => {
+      if (!results.teamFound) {
+        console.log(`No teams found for index ${TeamToIndex}`);
+        return;
+      }
+      // Print results using destructuring
+      const {
+        gamesFound,
+        totalHR,
+        totalHRF,
+        totalHRA,
+        averageHR,
+        averageHRF,
+        averageHRA,
+        ovhr,
+        unhr,
+        ovpercent,
+        unpercent,
+      } = results;
+  
+      console.log("------------------------------");
+      console.log("General Home Run  Information");
+      console.log("------------------------------");
+  
+      console.log(`Total Games Played: ${gamesFound}`);
+      console.log(`Total Home Runs: ${totalHR}`);
+      console.log(`Total Home Runs for: ${totalHRF}`);
+      console.log(`Total Home Runs against: ${totalHRA}`);
+      console.log(`Average Home Runs: ${averageHR}`);
+      console.log(`Average Home Runs for: ${averageHRF}`);
+      console.log(`Average Home Runs against: ${averageHRA}`);
+  
+      console.log("--------------------------");
+      console.log("Over Under 2.5 Information");
+      console.log("--------------------------");
+  
+      console.log(`Games over 2.5 Home Runs:${ovhr}`);
+      console.log(`Games under 2.5 Home Runs:${unhr}`);
+      console.log(`Percentage of games over 2.5HR: ${ovpercent}%`);
+      console.log(`Percentage of games under 2.5HR: ${unpercent}%`);
+    })
+    .catch((error) => {
+      console.error("Error analyzing home run data:", error);
+    });
+  
