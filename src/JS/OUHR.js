@@ -161,7 +161,8 @@ async function analyzeHeadToHeadHomeRuns(team1, team2) {
     console.log("------------------------------");
 
     console.log(`Implied Odds for Over 2.5 HR: ${decimalOdds}x`);
-    console.log(`Implied Odds for Over 1.5 HR: ${decimalOdds1p5}`);
+    console.log(`Implied Odds for Over 1.5 HR: ${decimalOdds1p5}x`);
+    
 }
 
 
