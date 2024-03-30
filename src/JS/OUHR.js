@@ -2533,4 +2533,4 @@ const data = Date,Game Type,,Away,,Home,HR Away,HR Home,,HR Total,,
 20231001,0,Sun,CLE,AL,DET,1,1,,2,,
 20231001,0,Sun,NYA,AL,KCA,0,3,,3,,
 20231001,0,Sun,TEX,AL,SEA,0,0,,0,,
-20231001,0,Sun,TBA,AL,TOR,3,1,,4,,
+20231001,0,Sun,TBA,AL,TOR,3,1,,4,,"
