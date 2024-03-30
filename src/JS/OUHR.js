@@ -1,4 +1,4 @@
-let is
+let is_split = false;
 
 async function analyzeHomeRuns(teamToIndex) {
 
@@ -11,6 +11,7 @@ async function analyzeHomeRuns(teamToIndex) {
 
     // Load the data into csv format
     data = data.split("\n").map((row) => row.split(","));
+    is_split = true;
   
     // Loop through each game in the data
     for (const game of data) {
