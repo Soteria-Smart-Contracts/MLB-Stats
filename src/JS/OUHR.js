@@ -8,7 +8,7 @@ async function analyzeHomeRuns(teamToIndex) {
     let unhr = 0;
 
     // Load the data into csv format
-    data = data.map((game) => game.split(",").join(","));
+    data = data.map((game) => game.split(",").join("/n"));
   
     // Loop through each game in the data
     for (const game of data) {
