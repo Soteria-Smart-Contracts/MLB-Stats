@@ -1,5 +1,7 @@
+let
 
 async function analyzeHomeRuns(teamToIndex) {
+
     let gamesFound = 0;
     let totalHR = 0;
     let totalHRF = 0;
