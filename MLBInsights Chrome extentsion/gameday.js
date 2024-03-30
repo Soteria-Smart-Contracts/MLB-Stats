@@ -1,7 +1,7 @@
 
 //if the word preview is in the url, then we are on the preview page so alert the user
 if(window.location.href.indexOf("preview") > -1) {
-    //see if the user 
+    //get the 3 letter team codes for 
     alert("You are on the preview page");
 }
 
