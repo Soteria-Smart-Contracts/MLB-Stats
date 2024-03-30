@@ -121,6 +121,7 @@ async function analyzeHeadToHeadHomeRuns(team1, team2) {
     const averageHRF2 = (totalHRF2 / gamesFound).toFixed(4);
     const ovpercent = ((ovhr / gamesFound) * 100).toFixed(2);
     const unpercent = ((unhr / gamesFound) * 100).toFixed(2);
+    const
 
     console.log("------------------------------");
     console.log("Head-to-Head Home Run Information");
