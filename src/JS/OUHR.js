@@ -224,7 +224,7 @@ const teamcodes = {
     "Oakland Athletics": "OAK",
     "Philadelphia Phillies": "PHI",
     "Pittsburgh Pirates": "PIT",
-    "San Diego Padres": "SD",
+    "San Diego Padres": "SDN",
     "San Francisco Giants": "SF",
     "Seattle Mariners": "SEA",
     "St. Louis Cardinals": "SLN",
