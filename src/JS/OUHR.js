@@ -156,6 +156,7 @@ async function analyzeHeadToHeadHomeRuns(team1, team2) {
 
     console.log("------------------------------");
     console.log("Implied Odds");
+    console.log("------------------------------");
 }
 
 
