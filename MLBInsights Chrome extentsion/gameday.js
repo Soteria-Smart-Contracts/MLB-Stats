@@ -2601,9 +2601,11 @@ if(window.location.href.indexOf("preview") > -1) {
         let team1 = teamcodes[window.location.href.split("/")[4].split("-")[0]];
         //if team 1 is red or white, get the second team name from the 3rd index, otherwise get it from the 2nd index
         if(team1 == "red" || team1 == "white") {
+            team1 = teamcodes[window.location.href.split("/")[4].split("-")[3]];
+        }
+        else {
             team1 = teamcodes[window.location.href.split("/")[4].split("-")[2]];
         }
-        else
         analyzeHeadToHeadHomeRuns(team1, team2);
       });
 }
