@@ -13,7 +13,6 @@ async function analyzeHomeRuns(teamToIndex) {
     // Loop through each game in the data
     for (const game of data) {
       if (game[3] === teamToIndex || game[5] === teamToIndex) {
-        console.log(game);
         totalHR += Number(game[9]); 
         if (game[3] === teamToIndex) {
           totalHRF += Number(game[6]); // Assuming home runs for at index 5
@@ -54,8 +53,8 @@ async function analyzeHomeRuns(teamToIndex) {
       console.log("Over Under 2.5 Information");
       console.log("--------------------------");
   
-      console.log(`Games over 2.5 Home Runs:${ovhr}`);
-      console.log(`Games under 2.5 Home Runs:${unhr}`);
+      console.log(`Games over 2.5 Home Runs: ${ovhr}`);
+      console.log(`Games under 2.5 Home Runs: ${unhr}`);
       console.log(`Percentage of games over 2.5HR: ${ovpercent}%`);
       console.log(`Percentage of games under 2.5HR: ${unpercent}%`);
 }
