@@ -54,7 +54,7 @@ async function analyzeHomeRuns(teamToIndex) {
       console.log("--------------------------");
   
       console.log(`Games over 2.5 Home Runs: ${ovhr}`);
-      console.log(`Games under 2.5 Home Runs: ${unhr}`);
+      console.log(`Games under 2.5 Home Runs:${unhr}`);
       console.log(`Percentage of games over 2.5HR: ${ovpercent}%`);
       console.log(`Percentage of games under 2.5HR: ${unpercent}%`);
 }
