@@ -133,7 +133,7 @@ const teamcodes = {
     "diamondbacks": "ARI",
     "braves": "ATL",
     "orioles": "BAL",
-    "red sox": "BOS",
+    "red": "BOS",
     "cubs": "CHN",
     "white": "CHA",
     "reds": "CIN",
