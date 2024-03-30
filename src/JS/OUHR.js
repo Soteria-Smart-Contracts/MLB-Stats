@@ -146,6 +146,10 @@ async function analyzeHeadToHeadHomeRuns(team1, team2) {
     console.log(`Percentage of games under 2.5 HR: ${unpercent}%`);
 
     console.log("--------------------------");
+    console.log("Over Under 1.5 Information");
+    console.log("--------------------------");
+
+    console.log(`Games over 1.5 Home Runs: ${ov1p5}`);
     
 }
 
