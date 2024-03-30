@@ -5,8 +5,7 @@ if(window.location.href.indexOf("preview") > -1) {
     let team1 = teamcodes[window.location.href.split("/")[4].split("-")[0]];
     let team2 = teamcodes[window.location.href.split("/")[4].split("-")[1]];
     //call the function to analyze the head to head home runs
-
-    alert("You are on the preview page");
+    analyzeHeadToHeadHomeRuns(team1, team2);
 }
 
 async function Go(){
