@@ -213,7 +213,7 @@ const teamcodes = {
     "Colorado Rockies": "COL",
     "Detroit Tigers": "DET",
     "Houston Astros": "HOU",
-    "Kansas City Royals": "KC",
+    "Kansas City Royals": "KCA",
     "Los Angeles Angels": "LAA",
     "Los Angeles Dodgers": "LAD",
     "Miami Marlins": "MIA",
