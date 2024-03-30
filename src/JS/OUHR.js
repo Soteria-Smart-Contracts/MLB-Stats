@@ -1,7 +1,6 @@
 const CSV = require('csv-string');
 
 async function analyzeHomeRuns(teamToIndex) {
-    let teamFound = false;
     let gamesFound = 0;
     let totalHR = 0;
     let totalHRF = 0;
@@ -10,7 +9,7 @@ async function analyzeHomeRuns(teamToIndex) {
     let unhr = 0;
 
     // Load the data into csv format
-    const data = CSV.parse(data)
+    data = CSV.parse(data)
   
     // Loop through each game in the data
     for (const game of data) {
