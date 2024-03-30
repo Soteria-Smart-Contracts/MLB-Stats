@@ -73,7 +73,8 @@ async function analyzeHeadToHeadHomeRuns(team1, team2) {
     let totalHRF2 = 0;
     let ovhr = 0;
     let unhr = 0;
-    let ov1.5
+    let ov1p5 = 0;
+    let un1p5 = 0;
 
     // Load the data into CSV format if not already done
     if (!is_split) {
