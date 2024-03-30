@@ -2,7 +2,8 @@
 //if the word preview is in the url, then we are on the preview page so alert the user
 if(window.location.href.indexOf("preview") > -1) {
     //get the 3 letter team codes for each team using the url and matching its contents to the teamcodes object (example link: https://www.mlb.com/gameday/brewers-vs-mets/2024/03/30/745850/preview)
-        alert("You are on the preview page");
+    let team1 = teamcodes[window.location.href.split("/")[4].split("-")[0]];
+    alert("You are on the preview page");
 }
 
 async function Go(){
