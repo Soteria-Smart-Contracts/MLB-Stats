@@ -114,15 +114,12 @@ async function analyzeHeadToHeadHomeRuns(team1, team2) {
         "\nAverage Home Runs for " + team1 + ": " + averageHRF1 +
         "\nAverage Home Runs for " + team2 + ": " + averageHRF2 +
         "\n--------------------------" +
-        "\nOver Under 2.5 Information" +
+        "\nOver Under Information" +
         "\n--------------------------" +
         "\nGames over 2.5 Home Runs: " + ovhr +
         "\nGames under 2.5 Home Runs: " + unhr +
         "\nPercentage of games over 2.5 HR: " + ovpercent + "%" +
         "\nPercentage of games under 2.5 HR: " + unpercent + "%" +
-        "\n--------------------------" +
-        "\nOver Under 1.5 Information" +
-        "\n--------------------------" +
         "\nGames over 1.5 Home Runs: " + ov1p5 +
         "\nGames under 1.5 Home Runs: " + un1p5 +
         "\nPercentage of games over 1.5 HR: " + ov1p5percent + "%" +
