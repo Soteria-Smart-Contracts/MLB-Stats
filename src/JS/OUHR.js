@@ -125,8 +125,8 @@ async function analyzeHeadToHeadHomeRuns(team1, team2) {
     const un1p5percent = ((un1p5 / gamesFound) * 100).toFixed(2);
     const decimalOdds = (1 / (ovpercent / 100)).toFixed(2);
     const decimalOdds1p5 = (1 / (ov1p5percent / 100)).toFixed(2);
-    //calculate under odds
-    co
+    const decimalOddsUnder = (1 / (unpercent / 100)).toFixed(2);
+    const decimalOdds1p5Under = (1 / (un1p5percent / 100)).toFixed(2);
 
     console.log("------------------------------");
     console.log("Head-to-Head Home Run Information");
@@ -164,6 +164,8 @@ async function analyzeHeadToHeadHomeRuns(team1, team2) {
 
     console.log(`Implied Odds for Over 2.5 HR: ${decimalOdds}x`);
     console.log(`Implied Odds for Over 1.5 HR: ${decimalOdds1p5}x`);
+    console.log(`Implied Odds for Under 2.5 HR: ${decimalOddsUnder}x`);
+    console.log(`Implied Odds for Under 1.5 HR: ${decimalOdds1p5Under}x`);
 
 }
 
