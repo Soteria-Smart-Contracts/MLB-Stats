@@ -22,7 +22,7 @@ async function analyzeHomeRuns(teamToIndex) {
           totalHRF += game[6];
           totalHRA += game[5];
         }
-        if (game[8] > 1.5) {
+        if (game[9] > 1.5) {
           ovhr++;
         } else {
           unhr++;
