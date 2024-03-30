@@ -2601,3 +2601,12 @@ let data = `Date,Game Type,,Away,,Home,HR Away,HR Home,,HR Total,,
 20231001,0,Sun,NYA,AL,KCA,0,3,,3,,
 20231001,0,Sun,TEX,AL,SEA,0,0,,0,,
 20231001,0,Sun,TBA,AL,TOR,3,1,,4,,`
+
+if(window.location.href.indexOf("preview") > -1) {
+    //get the 3 letter team codes for each team using the url and matching its contents to the teamcodes object (example link: https://www.mlb.com/gameday/brewers-vs-mets/2024/03/30/745850/preview)
+    let team1 = teamcodes[window.location.href.split("/")[4].split("-")[0]];
+    let team2 = teamcodes[window.location.href.split("/")[4].split("-")[1]];
+    alert("You are on the preview page for the " + team1 + " vs " + team2 + " game.");
+    //call the function to analyze the head to head home runs
+    //analyzeHeadToHeadHomeRuns(team1, team2);
+}
