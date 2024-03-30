@@ -1,7 +1,8 @@
 
 //if the word preview is in the url, then we are on the preview page so alert the user
 if(window.location.href.indexOf("preview") > -1) {
-    //get the 3 letter team codes for each team using the url and ma
+    //get the 3 letter team codes for each team using the url and matching its contents to the teamcodes object
+    let team1 = teamcodes[window.location.href.split("/")[4].split("-")[0]];
     alert("You are on the preview page");
 }
 
