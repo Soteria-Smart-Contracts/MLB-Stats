@@ -34,6 +34,27 @@ async function analyzeHomeRuns(teamToIndex) {
     const averageHRA = (totalHRA / gamesFound).toFixed(4);
     const ovpercent = ((ovhr / gamesFound) * 100).toFixed(2);
     const unpercent = ((unhr / gamesFound) * 100).toFixed(2);
+
+    console.log("------------------------------");
+      console.log("General Home Run  Information");
+      console.log("------------------------------");
+  
+      console.log(`Total Games Played: ${gamesFound}`);
+      console.log(`Total Home Runs: ${totalHR}`);
+      console.log(`Total Home Runs for: ${totalHRF}`);
+      console.log(`Total Home Runs against: ${totalHRA}`);
+      console.log(`Average Home Runs: ${averageHR}`);
+      console.log(`Average Home Runs for: ${averageHRF}`);
+      console.log(`Average Home Runs against: ${averageHRA}`);
+  
+      console.log("--------------------------");
+      console.log("Over Under 2.5 Information");
+      console.log("--------------------------");
+  
+      console.log(`Games over 2.5 Home Runs:${ovhr}`);
+      console.log(`Games under 2.5 Home Runs:${unhr}`);
+      console.log(`Percentage of games over 2.5HR: ${ovpercent}%`);
+      console.log(`Percentage of games under 2.5HR: ${unpercent}%`);
   
     return {
       teamFound,
