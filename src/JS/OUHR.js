@@ -123,9 +123,8 @@ async function analyzeHeadToHeadHomeRuns(team1, team2) {
     const unpercent = ((unhr / gamesFound) * 100).toFixed(2);
     const ov1p5percent = ((ov1p5 / gamesFound) * 100).toFixed(2);
     const un1p5percent = ((un1p5 / gamesFound) * 100).toFixed(2);
-    //convert odds to decimal format for betting
     const decimalOdds = (1 / (ovpercent / 100)).toFixed(2);
-    
+    const decimalOdds1p5 = (1 / (ov1p5percent / 100)).toFixed(2);
 
     console.log("------------------------------");
     console.log("Head-to-Head Home Run Information");
@@ -160,6 +159,7 @@ async function analyzeHeadToHeadHomeRuns(team1, team2) {
     console.log("------------------------------");
     console.log("Implied Odds");
     console.log("------------------------------");
+    
 }
 
 
