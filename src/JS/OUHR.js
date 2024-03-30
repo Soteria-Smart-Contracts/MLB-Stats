@@ -102,3 +102,5 @@ async function analyzeHomeRuns(data, teamToIndex) {
       console.error("Error analyzing home run data:", error);
     });
   
+
+const data = 
