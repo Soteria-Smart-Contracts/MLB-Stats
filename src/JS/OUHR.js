@@ -10,8 +10,10 @@ async function analyzeHomeRuns(teamToIndex) {
     let unhr = 0;
 
     // Load the data into csv format
-    data = data.split("\n").map((row) => row.split(","));
-    is_split = true;
+    if (!is_split) {
+        data = data.split("\n").map((row) => row.split(","));
+        is_split = true;
+    }
   
     // Loop through each game in the data
     for (const game of data) {
