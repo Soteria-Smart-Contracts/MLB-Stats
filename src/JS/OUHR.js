@@ -12,6 +12,7 @@ async function analyzeHomeRuns(teamToIndex) {
   
     // Loop through each game in the data
     for (const game of data) {
+        console.log(game);
       if (game[0] === teamToIndex || game[2] === teamToIndex) {
         totalHR += game[8]; // Assuming home runs are at index 8
         if (game[0] === teamToIndex) {
