@@ -24,8 +24,8 @@
         "js": ["content.js"]
       },
       {
-        "matches": ["https://www.mlb.com/player/*"],
-        "js": ["content.js"]}
+        "matches": ["https://www.mlb.com/gameday/*"],
+        "js": ["gameday.js"]}
     ]
   }
   
