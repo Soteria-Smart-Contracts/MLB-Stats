@@ -1,1 +1,1 @@
-console.log("gameday.js loaded");
+alert("gameday.js loaded");
