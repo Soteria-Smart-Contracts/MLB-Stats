@@ -1,4 +1,4 @@
-async function analyzeHomeRuns(data, teamToIndex) {
+async function analyzeHomeRuns(teamToIndex) {
     let teamFound = false;
     let gamesFound = 0;
     let totalHR = 0;
