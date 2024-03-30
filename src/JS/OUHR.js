@@ -96,7 +96,7 @@ async function analyzeHeadToHeadHomeRuns(team1, team2) {
                 totalHRF2 += Number(game[6]);
             }
 
-            if (Number(game[9]) > 1.5) {
+            if (Number(game[9]) > 2.5) {
                 ovhr++;
             } else {
                 unhr++;
