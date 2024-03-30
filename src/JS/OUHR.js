@@ -125,7 +125,8 @@ async function analyzeHeadToHeadHomeRuns(team1, team2) {
     const un1p5percent = ((un1p5 / gamesFound) * 100).toFixed(2);
     const decimalOdds = (1 / (ovpercent / 100)).toFixed(2);
     const decimalOdds1p5 = (1 / (ov1p5percent / 100)).toFixed(2);
-    //calculate under 2.5 odds
+    //calculate under odds
+    co
 
     console.log("------------------------------");
     console.log("Head-to-Head Home Run Information");
