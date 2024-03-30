@@ -228,7 +228,7 @@ const teamcodes = {
     "San Francisco Giants": "SFN",
     "Seattle Mariners": "SEA",
     "St. Louis Cardinals": "SLN",
-    "Tampa Bay Rays": "TBR",
+    "Tampa Bay Rays": "TBA",
     "Texas Rangers": "TEX",
     "Toronto Blue Jays": "TOR",
     "Washington Nationals": "WSH"
