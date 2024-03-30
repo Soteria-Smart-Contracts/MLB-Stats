@@ -225,7 +225,7 @@ const teamcodes = {
     "Philadelphia Phillies": "PHI",
     "Pittsburgh Pirates": "PIT",
     "San Diego Padres": "SDN",
-    "San Francisco Giants": "SF",
+    "San Francisco Giants": "SFN",
     "Seattle Mariners": "SEA",
     "St. Louis Cardinals": "SLN",
     "Tampa Bay Rays": "TBR",
