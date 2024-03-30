@@ -64,6 +64,86 @@ async function analyzeHomeRuns(teamToIndex) {
       console.log(`Percentage of games under 2.5HR: ${unpercent}%`);
 }
 
+Here's the updated code with a new analyzeHeadToHeadHomeRuns function:
+
+JavaScript
+let is_split = false;
+
+async function analyzeHomeRuns(teamToIndex) {
+    // ... (existing code for single team analysis)
+}
+
+// New function for head-to-head analysis
+async function analyzeHeadToHeadHomeRuns(team1, team2) {
+    let gamesFound = 0;
+    let totalHR = 0;
+    let totalHRF1 = 0;
+    let totalHRF2 = 0;
+    let ovhr = 0;
+    let unhr = 0;
+
+    // Load the data into CSV format if not already done
+    if (!is_split) {
+        data = data.split("\n").map((row) => row.split(","));
+        is_split = true;
+    }
+
+    // Loop through each game in the data
+    for (const game of data) {
+        const team1InGame = game[3] === team1 || game[5] === team1;
+        const team2InGame = game[3] === team2 || game[5] === team2;
+
+        if (team1InGame && team2InGame) {
+            totalHR += Number(game[9]);
+
+            if (game[3] === team1) {
+                totalHRF1 += Number(game[6]);
+                totalHRF2 += Number(game[7]);
+            } else {
+                totalHRF1 += Number(game[7]);
+                totalHRF2 += Number(game[6]);
+            }
+
+            if (Number(game[9]) > 1.5) {
+                ovhr++;
+            } else {
+                unhr++;
+            }
+
+            gamesFound++;
+        }
+    }
+
+    // Calculate averages and percentages
+    const averageHR = (totalHR / gamesFound).toFixed(4);
+    const averageHRF1 = (totalHRF1 / gamesFound).toFixed(4);
+    const averageHRF2 = (totalHRF2 / gamesFound).toFixed(4);
+    const ovpercent = ((ovhr / gamesFound) * 100).toFixed(2);
+    const unpercent = ((unhr / gamesFound) * 100).toFixed(2);
+
+    console.log("------------------------------");
+    console.log("Head-to-Head Home Run Information");
+    console.log("------------------------------");
+
+    console.log(`Total Games Played: ${gamesFound}`);
+    console.log(`Total Home Runs: ${totalHR}`);
+    console.log(`Total Home Runs for ${team1}: ${totalHRF1}`);
+    console.log(`Total Home Runs for ${team2}: ${totalHRF2}`);
+    console.log(`Average Home Runs: ${averageHR}`);
+    console.log(`Average Home Runs for ${team1}: ${averageHRF1}`);
+    console.log(`Average Home Runs for ${team2}: ${averageHRF2}`);
+
+    console.log("--------------------------");
+    console.log("Over Under 2.5 Information");
+    console.log("--------------------------");
+
+    console.log(`Games over 2.5 Home Runs: ${ovhr}`);
+    console.log(`Games under 2.5 Home Runs: ${unhr}`);
+    console.log(`Percentage of games over 2.5 HR: ${ovpercent}%`);
+    console.log(`Percentage of games under 2.5 HR: ${unpercent}%`);
+}
+
+
 let data = `Date,Game Type,,Away,,Home,HR Away,HR Home,,HR Total,,
 20230330,0,Thu,MIL,NL,CHN,0,0,,0,,
 20230330,0,Thu,PIT,NL,CIN,1,1,,2,,
