@@ -231,7 +231,7 @@ const teamcodes = {
     "Tampa Bay Rays": "TBA",
     "Texas Rangers": "TEX",
     "Toronto Blue Jays": "TOR",
-    "Washington Nationals": "WSH"
+    "Washington Nationals": "WAS"
   };
   
 
