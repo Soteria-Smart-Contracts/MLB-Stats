@@ -27,7 +27,6 @@ async function analyzeHomeRuns(teamToIndex) {
         } else {
           unhr++;
         }
-        teamFound = true;
         gamesFound++;
       }
     }
