@@ -5,7 +5,7 @@ if(window.location.href.indexOf("preview") > -1) {
     let team1 = teamcodes[window.location.href.split("/")[4].split("-")[0]];
     let team2 = teamcodes[window.location.href.split("/")[4].split("-")[1]];
     //call the function to analyze the head to head home runs
-    
+
     alert("You are on the preview page");
 }
 
@@ -152,37 +152,37 @@ async function analyzeHeadToHeadHomeRuns(team1, team2) {
 }
 
 const teamcodes = {
-    "Diamondbacks": "ARI",
-    "Braves": "ATL",
-    "Orioles": "BAL",
-    "Red Sox": "BOS",
-    "Cubs": "CHN",
-    "White Sox": "CHA",
-    "Reds": "CIN",
-    "Guardians": "CLE",
-    "Rockies": "COL",
-    "Tigers": "DET",
-    "Astros": "HOU",
-    "City Royals": "KCA",
-    "Angels": "ANA",
-    "Dodgers": "LAN",
-    "Marlins": "MIA",
-    "Brewers": "MIL",
-    "Twins": "MIN",
-    "Mets": "NYN",
-    "Yankees": "NYA",
-    "Athletics": "OAK",
-    "Phillies": "PHI",
-    "Pirates": "PIT",
-    "Padres": "SDN",
-    "Giants": "SFN",
-    "Mariners": "SEA",
-    "Cardinals": "SLN",
-    "Rays": "TBA",
-    "Rangers": "TEX",
-    "Jays": "TOR",
-    "Nationals": "WAS"
-  };
+    "diamondbacks": "ARI",
+    "braves": "ATL",
+    "orioles": "BAL",
+    "red sox": "BOS",
+    "cubs": "CHN",
+    "white sox": "CHA",
+    "reds": "CIN",
+    "guardians": "CLE",
+    "rockies": "COL",
+    "tigers": "DET",
+    "astros": "HOU",
+    "city royals": "KCA",
+    "angels": "ANA",
+    "dodgers": "LAN",
+    "marlins": "MIA",
+    "brewers": "MIL",
+    "twins": "MIN",
+    "mets": "NYN",
+    "yankees": "NYA",
+    "athletics": "OAK",
+    "phillies": "PHI",
+    "pirates": "PIT",
+    "padres": "SDN",
+    "giants": "SFN",
+    "mariners": "SEA",
+    "cardinals": "SLN",
+    "rays": "TBA",
+    "rangers": "TEX",
+    "jays": "TOR",
+    "nationals": "WAS"
+};
   
 
 
