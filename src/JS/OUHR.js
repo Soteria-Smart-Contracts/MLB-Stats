@@ -1,4 +1,4 @@
-let
+let is
 
 async function analyzeHomeRuns(teamToIndex) {
 
