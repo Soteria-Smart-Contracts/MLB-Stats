@@ -174,9 +174,9 @@ const teamcodes = {
     "Mariners": "SEA",
     "Cardinals": "SLN",
     "Rays": "TBA",
-    "Texas Rangers": "TEX",
-    "Toronto Blue Jays": "TOR",
-    "Washington Nationals": "WAS"
+    "Rangers": "TEX",
+    "Jays": "TOR",
+    "Nationals": "WAS"
   };
   
 
