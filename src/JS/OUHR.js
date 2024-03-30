@@ -219,7 +219,7 @@ const teamcodes = {
     "Miami Marlins": "MIA",
     "Milwaukee Brewers": "MIL",
     "Minnesota Twins": "MIN",
-    "New York Mets": "NYM",
+    "New York Mets": "NYN",
     "New York Yankees": "NYY",
     "Oakland Athletics": "OAK",
     "Philadelphia Phillies": "PHI",
