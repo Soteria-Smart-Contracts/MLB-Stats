@@ -104,6 +104,13 @@ async function analyzeHeadToHeadHomeRuns(team1, team2) {
                 unhr++;
             }
 
+            if (Number(game[9]) > 1.5) {
+                ov1p5++;
+            }
+            else {
+                un1p5++;
+            }
+
             gamesFound++;
         }
     }
