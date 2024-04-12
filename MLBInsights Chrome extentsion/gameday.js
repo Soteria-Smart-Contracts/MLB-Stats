@@ -2617,5 +2617,6 @@ if(window.location.href.indexOf("preview") > -1) {
         }
         analyzeHeadToHeadHomeRuns(team1, team2);
       });
-      //if the url changes and still contains preview, do it again and delete the old event listener, and the table
+      //if the url changes and still contains preview, do it again and delete the old event listener, and infobox
+      
 }
