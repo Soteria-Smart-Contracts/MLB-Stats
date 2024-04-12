@@ -2604,6 +2604,7 @@ let data = `Date,Game Type,,Away,,Home,HR Away,HR Home,,HR Total,,
 20231001,0,Sun,TBA,AL,TOR,3,1,,4,,`
 
 if(window.location.href.indexOf("preview") > -1) {
+    currenthref = window
     //get the 3 letter team codes for each team using the url and matching its contents to the teamcodes object (example link: https://www.mlb.com/gameday/red-sox-vs-mets/2024/03/30/745850/preview)
     //wait 3 seconds for the page to load
     window.addEventListener('load', function () {
