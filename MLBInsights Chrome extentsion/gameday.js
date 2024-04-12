@@ -110,9 +110,7 @@ async function analyzeHeadToHeadHomeRuns(team1, team2) {
     console.log(`Implied Odds for Under 1.5 HR: ${decimalOdds1p5Under}x`);
 
     const infoBox = document.createElement('div');
-    infoBox.id = 'infoBox';
-    infoBox.style.border = '1px solid black';
-    infoBox.style.padding = '10px';
+
     infoBox.innerHTML = `
         <h2>Head-to-Head Home Run Stats</h2>
         <p>Total Games Played: ${gamesFound}</p>
