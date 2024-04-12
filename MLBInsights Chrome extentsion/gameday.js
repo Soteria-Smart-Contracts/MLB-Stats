@@ -2617,5 +2617,5 @@ if(window.location.href.indexOf("preview") > -1) {
         }
         analyzeHeadToHeadHomeRuns(team1, team2);
       });
-      //if the url changes and still contains preview, do it again and dele
+      //if the url changes and still contains preview, do it again and delete the old 
 }
