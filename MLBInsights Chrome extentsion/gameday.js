@@ -2627,6 +2627,9 @@ if(window.location.href.indexOf("preview") > -1) {
       //if the url changes and still contains preview, do it again and delete the old event listener, and infobox
     setInterval(function() {
         if(window.location.href != currenthref) {
+            infoBox.innerHTML = "";
+            currenthref = window.location.href;
+
             let team1 = teamcodes[window.location.href.split("/")[4].split("-")[0]];
             let team2;
             if(team1 == "BOS" || team1 == "CHA" || team1 == "TOR") {
@@ -2636,8 +2639,6 @@ if(window.location.href.indexOf("preview") > -1) {
                 team2 = teamcodes[window.location.href.split("/")[4].split("-")[2]];
             }
             analyzeHeadToHeadHomeRuns(team1, team2);
-            //delete the infobox
-            infoBox.innerHTML = "";
         }
     }, 100);
 }
