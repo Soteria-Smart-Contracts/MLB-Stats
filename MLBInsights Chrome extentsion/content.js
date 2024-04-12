@@ -1045,4 +1045,9 @@ setInterval(function() {
     }
 }, 100);
 
-
+function DeleteOldTable() {
+    var table = document.getElementById("MLBInsightsTable");
+    if (table) {
+        table.remove();
+    }
+}
