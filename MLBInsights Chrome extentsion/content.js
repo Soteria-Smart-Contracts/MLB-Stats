@@ -91,6 +91,7 @@ async function GetPitcherInfo(Name) {
     playerInfoTable.style.margin = '20px';
     playerInfoTable.innerHTML = `
     <br>
+    <br>
         <tr>
             <th style="border: 1px solid black; padding: 8px;">Name</th>
             <th style="border: 1px solid black; padding: 8px;">Age</th>
