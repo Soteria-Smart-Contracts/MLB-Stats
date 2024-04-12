@@ -103,29 +103,36 @@ async function analyzeHeadToHeadHomeRuns(team1, team2) {
     console.log(`Implied Odds for Under 2.5 HR: ${decimalOddsUnder}x`);
     console.log(`Implied Odds for Under 1.5 HR: ${decimalOdds1p5Under}x`);
 
-    alert(
-        "\nHead-to-Head Home Run Stats" +
-        "\n------------------------------" +
-        "\nTotal Games Played: " + gamesFound +
-        "\nTotal Home Runs: " + totalHR +
-        "\nTotal Home Runs for " + team1 + ": " + totalHRF1 +
-        "\nTotal Home Runs for " + team2 + ": " + totalHRF2 +
-        "\nAverage Home Runs: " + averageHR +
-        "\nAverage Home Runs for " + team1 + ": " + averageHRF1 +
-        "\nAverage Home Runs for " + team2 + ": " + averageHRF2 +
-        "\n--------------------------" +
-        "\nGames over 2.5 Home Runs: " + ovhr +
-        "\nGames under 2.5 Home Runs: " + unhr +
-        "\nPercentage of games over 2.5 HR: " + ovpercent + "%" +
-        "\nPercentage of games under 2.5 HR: " + unpercent + "%" +
-        "\nImplied Odds for Over 2.5 HR: " + decimalOdds + "x" +
-        "\nImplied Odds for Under 2.5 HR: " + decimalOddsUnder + "x" +
-        "\nGames over 1.5 Home Runs: " + ov1p5 +
-        "\nGames under 1.5 Home Runs: " + un1p5 +
-        "\nPercentage of games over 1.5 HR: " + ov1p5percent + "%" +
-        "\nPercentage of games under 1.5 HR: " + un1p5percent + "%" +
-        "\nImplied Odds for Over 1.5 HR: " + decimalOdds1p5 + "x" +
-        "\nImplied Odds for Under 1.5 HR: " + decimalOdds1p5Under + "x");
+    const head = document.getElementsByTagName('html')[0];
+    const infoBox = document.createElement('div');
+    infoBox.style.border = '1px solid black';
+    infoBox.style.padding = '10px';
+    infoBox.innerHTML = `
+        <h2>Head-to-Head Home Run Stats</h2>
+        <p>Total Games Played: ${gamesFound}</p>
+        <p>Total Home Runs: ${totalHR}</p>
+        <p>Total Home Runs for ${team1}: ${totalHRF1}</p>
+        <p>Total Home Runs for ${team2}: ${totalHRF2}</p>
+        <p>Average Home Runs: ${averageHR}</p>
+        <p>Average Home Runs for ${team1}: ${averageHRF1}</p>
+        <p>Average Home Runs for ${team2}: ${averageHRF2}</p>
+        <h3>Over Under 2.5 Information</h3>
+        <p>Games over 2.5 Home Runs: ${ovhr}</p>
+        <p>Games under 2.5 Home Runs: ${unhr}</p>
+        <p>Percentage of games over 2.5 HR: ${ovpercent}%</p>
+        <p>Percentage of games under 2.5 HR: ${unpercent}%</p>
+        <h3>Over Under 1.5 Information</h3>
+        <p>Games over 1.5 Home Runs: ${ov1p5}</p>
+        <p>Games under 1.5 Home Runs: ${un1p5}</p>
+        <p>Percentage of games over 1.5 HR: ${ov1p5percent}%</p>
+        <p>Percentage of games under 1.5 HR: ${un1p5percent}%</p>
+        <h3>Implied Odds</h3>
+        <p>Implied Odds for Over 2.5 HR: ${decimalOdds}x</p>
+        <p>Implied Odds for Over 1.5 HR: ${decimalOdds1p5}x</p>
+        <p>Implied Odds for Under 2.5 HR: ${decimalOddsUnder}x</p>
+        <p>Implied Odds for Under 1.5 HR: ${decimalOdds1p5Under}x</p>
+    `;
+    head.appendChild(infoBox);
 
 }
 
