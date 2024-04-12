@@ -2617,4 +2617,5 @@ if(window.location.href.indexOf("preview") > -1) {
         }
         analyzeHeadToHeadHomeRuns(team1, team2);
       });
+      //if the url
 }
