@@ -2617,5 +2617,5 @@ if(window.location.href.indexOf("preview") > -1) {
         }
         analyzeHeadToHeadHomeRuns(team1, team2);
       });
-      //if the url changes and st
+      //if the url changes and still contains preview, get the 3 letter team codes for each team using the url and matching its contents to the teamcodes object (example link: https://www.mlb.com/gameday/red-sox-vs-mets/2024/03/30/745850/preview)
 }
