@@ -1037,6 +1037,3 @@ window.addEventListener('load', function () {
 });
 
 //do the same but also listen for changes in the url
-window.addEventListener('popstate', function () {
-    Go();
-});
