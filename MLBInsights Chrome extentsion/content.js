@@ -112,7 +112,7 @@ async function GetPitcherInfo(Name) {
             <td>${playerInfo.HR}</td>
         </tr>
     `;
-    summaryBlock.appendChild(playerInfoTable);
+    summaryBlock.parentNode.insertBefore(playerInfoTable, summaryBlock);
     console.table(playerInfo);
 
     return playerInfo;
