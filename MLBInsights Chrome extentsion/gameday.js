@@ -2627,6 +2627,6 @@ if(window.location.href.indexOf("preview") > -1) {
             else{
                 team2 = teamcodes[window.location.href.split("/")[4].split("-")[2]];
             }
-            analyzeHeadToHeadHomeRuns(team1, team2);
-        });
+        analyzeHeadToHeadHomeRuns(team1, team2);
+    });
 }
