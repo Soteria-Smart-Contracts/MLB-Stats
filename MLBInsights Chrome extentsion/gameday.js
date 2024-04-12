@@ -1,6 +1,6 @@
 
 let is_split = false;
-const infoBox = document.createElement('div');
+let infoBox = document.createElement('div');
 infoBox.id = 'infoBox';
 infoBox.style.border = '1px solid black';
 infoBox.style.padding = '10px';
