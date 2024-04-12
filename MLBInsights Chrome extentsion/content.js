@@ -86,7 +86,33 @@ async function GetPitcherInfo(Name) {
     };
 
     // Display player info in a formatted table
-    console.log('%cPlayer Info', 'color: #ff6600; font-size: 18px;');
+    const summaryBlock = document.getElementById('summary-block');
+    const playerInfoTable = document.createElement('table');
+    playerInfoTable.innerHTML = `
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Team</th>
+            <th>Record</th>
+            <th>FIP</th>
+            <th>ERA</th>
+            <th>HR/9IP</th>
+            <th>IP</th>
+            <th>HR</th>
+        </tr>
+        <tr>
+            <td>${playerInfo.Name}</td>
+            <td>${playerInfo.Age}</td>
+            <td>${playerInfo.Team}</td>
+            <td>${playerInfo.Record}</td>
+            <td>${playerInfo.FIP}</td>
+            <td>${playerInfo.ERA}</td>
+            <td>${playerInfo["HR/9IP"]}</td>
+            <td>${playerInfo.IP}</td>
+            <td>${playerInfo.HR}</td>
+        </tr>
+    `;
+    summaryBlock.appendChild(playerInfoTable);
     console.table(playerInfo);
 
     return playerInfo;
