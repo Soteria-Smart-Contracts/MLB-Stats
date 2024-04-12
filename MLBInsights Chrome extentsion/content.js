@@ -87,28 +87,31 @@ async function GetPitcherInfo(Name) {
     // Display player info in a formatted table
     const summaryBlock = document.getElementById('summary-block');
     const playerInfoTable = document.createElement('table');
+    playerInfoTable.style.borderCollapse = 'collapse';
+    playerInfoTable.style.margin = '20px';
     playerInfoTable.innerHTML = `
+    <br>
         <tr>
-            <th>Name</th>
-            <th>Age</th>
-            <th>Team</th>
-            <th>Record</th>
-            <th>FIP</th>
-            <th>ERA</th>
-            <th>HR/9IP</th>
-            <th>IP</th>
-            <th>HR</th>
+            <th style="border: 1px solid black; padding: 8px;">Name</th>
+            <th style="border: 1px solid black; padding: 8px;">Age</th>
+            <th style="border: 1px solid black; padding: 8px;">Team</th>
+            <th style="border: 1px solid black; padding: 8px;">Record</th>
+            <th style="border: 1px solid black; padding: 8px;">FIP</th>
+            <th style="border: 1px solid black; padding: 8px;">ERA</th>
+            <th style="border: 1px solid black; padding: 8px;">HR/9IP</th>
+            <th style="border: 1px solid black; padding: 8px;">IP</th>
+            <th style="border: 1px solid black; padding: 8px;">HR</th>
         </tr>
         <tr>
-            <td>${playerInfo.Name}</td>
-            <td>${playerInfo.Age}</td>
-            <td>${playerInfo.Team}</td>
-            <td>${playerInfo.Record}</td>
-            <td>${playerInfo.FIP}</td>
-            <td>${playerInfo.ERA}</td>
-            <td>${playerInfo["HR/9IP"]}</td>
-            <td>${playerInfo.IP}</td>
-            <td>${playerInfo.HR}</td>
+            <td style="border: 1px solid black; padding: 8px;">${playerInfo.Name}</td>
+            <td style="border: 1px solid black; padding: 8px;">${playerInfo.Age}</td>
+            <td style="border: 1px solid black; padding: 8px;">${playerInfo.Team}</td>
+            <td style="border: 1px solid black; padding: 8px;">${playerInfo.Record}</td>
+            <td style="border: 1px solid black; padding: 8px;">${playerInfo.FIP}</td>
+            <td style="border: 1px solid black; padding: 8px;">${playerInfo.ERA}</td>
+            <td style="border: 1px solid black; padding: 8px;">${playerInfo["HR/9IP"]}</td>
+            <td style="border: 1px solid black; padding: 8px;">${playerInfo.IP}</td>
+            <td style="border: 1px solid black; padding: 8px;">${playerInfo.HR}</td>
         </tr>
     `;
     summaryBlock.parentNode.insertBefore(playerInfoTable, summaryBlock);
