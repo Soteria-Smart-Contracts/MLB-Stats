@@ -1036,4 +1036,11 @@ window.addEventListener('load', function () {
     Go();
 });
 
-//do the same but also listen for changes in the url
+// do the same but also listen for changes in the url
+setInterval(function() {
+    if (window.location.href !== currentUrl) {
+        currentUrl = window.location.href;
+        Go();
+        deleteOldTable();
+    }
+}, 100);
