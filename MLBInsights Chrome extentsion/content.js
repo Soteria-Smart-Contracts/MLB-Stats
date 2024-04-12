@@ -1037,17 +1037,4 @@ window.addEventListener('load', function () {
 });
 
 // do the same but also listen for changes in the url
-setInterval(function() {
-    if (window.location.href !== currentUrl) {
-        currentUrl = window.location.href;
-        Go();
-        deleteOldTable();
-    }
-}, 100);
 
-function DeleteOldTable() {
-    var table = document.getElementById("MLBInsightsTable");
-    if (table) {
-        table.remove();
-    }
-}
