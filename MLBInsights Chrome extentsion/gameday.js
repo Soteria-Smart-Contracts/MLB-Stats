@@ -7,6 +7,7 @@ infoBox.style.padding = '10px';
 const reactFooter = document.getElementById('react-footer');
 reactFooter.parentNode.insertBefore(infoBox, reactFooter);
 
+infoBox = document.getElementById('infoBox');
 
 // New function for head-to-head analysis
 async function analyzeHeadToHeadHomeRuns(team1, team2) {
