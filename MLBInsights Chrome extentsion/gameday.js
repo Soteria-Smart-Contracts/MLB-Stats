@@ -2630,6 +2630,6 @@ if(window.location.href.indexOf("preview") > -1) {
             }
         analyzeHeadToHeadHomeRuns(team1, team2);
         //delete the infobox
-        document.getElementById("infobox").remove();
+        document.getElementById("InfoBox").remove();
     });
 }
