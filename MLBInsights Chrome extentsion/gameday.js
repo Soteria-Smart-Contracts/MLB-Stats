@@ -3,6 +3,8 @@ let is_split = false;
 infoBox.id = 'infoBox';
 infoBox.style.border = '1px solid black';
 infoBox.style.padding = '10px';
+const reactFooter = document.getElementById('react-footer');
+reactFooter.parentNode.insertBefore(infoBox, reactFooter);
 
 // New function for head-to-head analysis
 async function analyzeHeadToHeadHomeRuns(team1, team2) {
