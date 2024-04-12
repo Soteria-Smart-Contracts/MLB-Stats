@@ -2621,16 +2621,17 @@ if(window.location.href.indexOf("preview") > -1) {
       });
       //if the url changes and still contains preview, do it again and delete the old event listener, and infobox
     setInterval(function() {
-        let team1 = teamcodes[window.location.href.split("/")[4].split("-")[0]];
-        let team2;
-        if(team1 == "BOS" || team1 == "CHA" || team1 == "TOR") {
-            team2 = teamcodes[window.location.href.split("/")[4].split("-")[3]];
-        }
-        else{
-            team2 = teamcodes[window.location.href.split("/")[4].split("-")[2]];
-        }
-        analyzeHeadToHeadHomeRuns(team1, team2);
-        //delete the infobox
-        document.getElementById("InfoBox").remove();
+        if(window.location.href != currenthref) {
+            let team1 = teamcodes[window.location.href.split("/")[4].split("-")[0]];
+            let team2;
+            if(team1 == "BOS" || team1 == "CHA" || team1 == "TOR") {
+                team2 = teamcodes[window.location.href.split("/")[4].split("-")[3]];
+            }
+            else{
+                team2 = teamcodes[window.location.href.split("/")[4].split("-")[2]];
+            }
+            analyzeHeadToHeadHomeRuns(team1, team2);
+            //delete the infobox
+            document.getElementById("InfoBox").remove();
     }, 1000);
 }
