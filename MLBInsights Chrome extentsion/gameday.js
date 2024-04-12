@@ -2628,5 +2628,7 @@ if(window.location.href.indexOf("preview") > -1) {
                 team2 = teamcodes[window.location.href.split("/")[4].split("-")[2]];
             }
         analyzeHeadToHeadHomeRuns(team1, team2);
+        //delete the infobox
+        document.getElementById("infobox").remove();
     });
 }
