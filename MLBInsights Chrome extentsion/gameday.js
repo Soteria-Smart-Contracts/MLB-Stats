@@ -137,7 +137,8 @@ async function analyzeHeadToHeadHomeRuns(team1, team2) {
 
 }
 
-// if the 
+// if the url changes, we need to re-run the script and delete the previous info box
+
 
 const teamcodes = {
     "diamondbacks": "ARI",
