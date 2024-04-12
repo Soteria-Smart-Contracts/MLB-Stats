@@ -105,6 +105,7 @@ async function analyzeHeadToHeadHomeRuns(team1, team2) {
 
     const head = document.getElementsByTagName('html')[0];
     const infoBox = document.createElement('div');
+    infoBox.id = 'infoBox';
     infoBox.style.border = '1px solid black';
     infoBox.style.padding = '10px';
     infoBox.innerHTML = `
