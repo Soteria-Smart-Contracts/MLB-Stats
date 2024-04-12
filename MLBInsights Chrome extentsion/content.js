@@ -1035,3 +1035,8 @@ Robert Garcia,MIA,27,1,0,0,0,0.1,1,0,0,1,0,0,0,0,0,0,0,6,0.00000
 window.addEventListener('load', function () {
     Go();
 });
+
+//do the same but also listen for changes in the url
+window.addEventListener('popstate', function () {
+    Go();
+});
