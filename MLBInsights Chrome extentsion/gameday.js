@@ -140,7 +140,7 @@ async function analyzeHeadToHeadHomeRuns(team1, team2) {
         <p>Implied Odds for Under 2.5 HR: ${decimalOddsUnder}x</p>
         <p>Implied Odds for Under 1.5 HR: ${decimalOdds1p5Under}x</p>
     `;
-
+    
 }
 
 const teamcodes = {
