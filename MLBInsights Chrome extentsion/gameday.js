@@ -2638,5 +2638,6 @@ if(window.location.href.indexOf("preview") > -1) {
             }
             analyzeHeadToHeadHomeRuns(team1, team2);
         }
+        console.log("checking");
     }, 100);
 }
