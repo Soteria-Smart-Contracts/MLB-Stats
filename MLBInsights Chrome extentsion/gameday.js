@@ -1,5 +1,6 @@
 
 let is_split = false;
+const infoBox = document.createElement('div');
 infoBox.id = 'infoBox';
 infoBox.style.border = '1px solid black';
 infoBox.style.padding = '10px';
@@ -108,7 +109,6 @@ async function analyzeHeadToHeadHomeRuns(team1, team2) {
     console.log(`Implied Odds for Under 2.5 HR: ${decimalOddsUnder}x`);
     console.log(`Implied Odds for Under 1.5 HR: ${decimalOdds1p5Under}x`);
 
-    const head = document.getElementsByTagName('html')[0];
     const infoBox = document.createElement('div');
     infoBox.id = 'infoBox';
     infoBox.style.border = '1px solid black';
