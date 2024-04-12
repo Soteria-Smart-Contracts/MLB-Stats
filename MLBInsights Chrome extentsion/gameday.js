@@ -138,7 +138,13 @@ async function analyzeHeadToHeadHomeRuns(team1, team2) {
 }
 
 // if the url changes, we need to re-run the script and delete the previous info box
-
+window.addEventListener('popstate', function () {
+    const infoBox = document.getElementsByTagName('div')[0];
+    if (infoBox) {
+        infoBox.remove();
+    }
+    is_split = false;
+});
 
 const teamcodes = {
     "diamondbacks": "ARI",
