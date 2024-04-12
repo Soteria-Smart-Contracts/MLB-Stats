@@ -1,13 +1,11 @@
 
 let is_split = false;
-let infoBox = document.createElement('div');
+const infoBox = document.createElement('div');
 infoBox.id = 'infoBox';
 infoBox.style.border = '1px solid black';
 infoBox.style.padding = '10px';
 const reactFooter = document.getElementById('react-footer');
 reactFooter.parentNode.insertBefore(infoBox, reactFooter);
-
-infoBox = document.getElementById('infoBox');
 
 // New function for head-to-head analysis
 async function analyzeHeadToHeadHomeRuns(team1, team2) {
