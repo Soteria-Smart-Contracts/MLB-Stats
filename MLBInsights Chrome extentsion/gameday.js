@@ -137,7 +137,9 @@ async function analyzeHeadToHeadHomeRuns(team1, team2) {
     
 }
 
-
+const playerElement = document.querySelector('.playerMatchupstyle__PlayerNameWrapper-sc-u51t3a-4.jJjzqB.trk-playermatchup-name');
+const playerName = playerElement.textContent;
+alert(playerName);
 
 const teamcodes = {
     "diamondbacks": "ARI",
