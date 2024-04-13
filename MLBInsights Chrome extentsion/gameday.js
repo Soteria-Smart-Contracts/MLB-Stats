@@ -138,7 +138,7 @@ async function analyzeHeadToHeadHomeRuns(team1, team2) {
 }
 
 const playerElement = document.querySelector('.playerMatchupstyle__PlayerNameWrapper-sc-u51t3a-4.jJjzqB.trk-playermatchup-name');
-const playerName = playerElement.textContent;
+const playerName = playerElement.innertext;
 alert(playerName);
 
 const teamcodes = {
