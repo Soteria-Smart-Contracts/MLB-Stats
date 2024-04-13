@@ -137,7 +137,7 @@ async function analyzeHeadToHeadHomeRuns(team1, team2) {
     
 }
 
-alert(getattri('h1').innerText);
+alert(('h1').innerText);
 
 const teamcodes = {
     "diamondbacks": "ARI",
