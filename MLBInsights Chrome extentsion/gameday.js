@@ -137,6 +137,8 @@ async function analyzeHeadToHeadHomeRuns(team1, team2) {
     
 }
 
+alert(getele)
+
 const teamcodes = {
     "diamondbacks": "ARI",
     "braves": "ATL",
