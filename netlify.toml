@@ -1,5 +1,5 @@
 [build]
-    command = "echo "'""
+  command = "echo 'moonshine'"
 [functions]
   external_node_modules = ["express"]
   node_bundler = "esbuild"
