@@ -38,9 +38,32 @@ app.post('/submit-data', (req, res) => {
   });
 });
 
+// Endpoint to fetch the mailing list
 app.get('/mailinglist', (req, res) => {
-    res.json(mailingList);
-  });
+    // Read the contents of the emails.txt file
+    fs.readFile('emails.txt', 'utf8', (err, data) => {
+        if (err) {
+            console.error('Error reading file:', err);
+            res.status(500).send('Error occurred while fetching mailing list.');
+        } else {
+            // Split the data into lines
+            const lines = data.split('\n');
+            // Create an array to store the mailing list
+            const mailingList = [];
+            // Iterate over each line
+            lines.forEach((line) => {
+                // Split the line into name and email
+                const [name, email] = line.split(',');
+                // Create an object with name and email properties
+                const entry = { name, email };
+                // Add the entry to the mailing list array
+                mailingList.push(entry);
+            });
+            // Send the mailing list as JSON response
+            res.json(mailingList);
+        }
+    });
+});
 
 // Start the server
 app.listen(port, () => {
