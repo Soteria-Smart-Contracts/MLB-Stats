@@ -38,6 +38,10 @@ app.post('/submit-data', (req, res) => {
   });
 });
 
+app.get('/mailinglist', (req, res) => {
+    res.json(mailingList);
+  });
+
 // Start the server
 app.listen(port, () => {
   console.log(`Server listening at http://localhost:${port}`);
